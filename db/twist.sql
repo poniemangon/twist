@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `tw_articles` (
   `meta_description` text COLLATE utf8mb4_unicode_ci,
   `url_slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `publish_date` datetime DEFAULT NULL,
+  `publish_date` date DEFAULT NULL,
   `paused` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`article_id`),
   UNIQUE KEY `url_slug` (`url_slug`),
