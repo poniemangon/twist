@@ -1,0 +1,2412 @@
+:root {
+    --primary: #F7941D;
+    --secondary: #9ABE37;
+    --terciary: #642E8B;
+    --quartery: #009FE2;
+    --fifth: #EC008C;
+    --sixth: #FFC909;
+}
+
+html, body { margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p, a, li, span, button, select, input, textarea { margin: 0; color: #959595; font-family: 'Nunito', sans-serif; }
+
+h1 { font-size: 60px; line-height: 0.9; }
+
+h2 { font-size: 40px; line-height: 0.9; }
+
+h3 { font-size: 30px; line-height: 1; }
+
+h4 { font-size: 20px; line-height: 1.2; }
+
+p, a, li, span, button, select, input, textarea { font-size: 16px; }
+
+img, iframe, figure, textarea { display: block; }
+
+a, button { cursor: pointer; transition: all 0.6s; }
+
+button { border: 0; }
+
+a { text-decoration: none; }
+
+ul { padding: 0; margin: 0; }
+
+li { list-style: none; }
+
+.mb-1{margin-bottom:15px}
+
+.container { max-width: 1200px; width: 80%; margin: auto; }
+
+.d-flex { display: flex; }
+
+.align-items-center { align-items: center; }
+
+.align-items-end { align-items: flex-end; }
+
+.justify-content-center { justify-content: center; }
+
+.justify-content-between { justify-content: space-between; }
+
+.extrabold { font-weight: 800; }
+
+.bold { font-weight: 700; }
+
+.semibold { font-weight: 600; }
+
+.medium { font-weight: 500; }
+
+.regular { font-weight: 400; }
+
+.light { font-weight: 300; }
+
+.inherit { font-weight: inherit; font-size: inherit; line-height: inherit; }
+
+.text-center { text-align: center; }
+
+.text-uppercase { text-transform: uppercase; }
+
+.white-color { color: #fff; }
+
+.relative { position: relative; }
+
+.absolute { position: absolute; }
+
+.btn { display: table; border-radius: 14px; font-weight: bold; }
+
+.btn-primary { background: var(--primary); color: #fff; padding: 10px 25px; }
+
+.btn-secondary { background: #fff; color: #959595; padding: 10px 25px; }
+
+.hover-background-primary:hover { background: var(--primary) !important; }
+
+.hover-background-secondary:hover { background: var(--secondary) !important; }
+
+.hover-background-terciary:hover { background: var(--terciary) !important; }
+
+.hover-background-quartery:hover { background: var(--quartery) !important; }
+
+.hover-background-fifth:hover { background: var(--fifth) !important; }
+
+.hover-background-sixth:hover { background: var(--sixth) !important; }
+
+.hover-color-primary:hover { color: var(--primary) !important; }
+
+.hover-color-secondary:hover { color: var(--secondary) !important; }
+
+.hover-color-terciary:hover { color: var(--terciary) !important; }
+
+.hover-color-quartery:hover { color: var(--quartery) !important; }
+
+.hover-color-fifth:hover { color: var(--fifth) !important; }
+
+.hover-color-sixth:hover { color: var(--sixth) !important; }
+
+.swal2-container.swal2-shown { z-index: 9999; }
+
+.swal2-popup #swal2-content { font-family: 'Nunito', sans-serif; color: #959595; }
+
+.swal2-popup .swal2-styled.swal2-confirm { background: var(--primary) !important; padding: 10px 25px; min-width: 140px; border-radius: 14px !important; }
+
+.swal2-popup .swal2-styled.swal2-confirm:hover { background: var(--secondary) !important; }
+
+.swal2-popup .swal2-styled.swal2-confirm:focus { box-shadow: none !important; }
+
+/* home page styles */
+
+.fixed-header { display: none; }
+
+.header .mobile-menu { display: none; }
+
+.header .desktop-menu img { max-width: 180px; }
+
+.header .desktop-menu .desktop-menu-contact-information-content { padding: 20px 0; }
+
+.header .desktop-menu .first-row .inner-row { column-gap: 55px; }
+
+.header .desktop-menu .first-row .first-inner-column { column-gap: 10px; }
+
+.header .desktop-menu .first-row .second-inner-column { column-gap: 10px; }
+
+.header .desktop-menu .first-row .meet-our-team-button { color: #959595; padding: 10px 25px; text-decoration: underline solid 2px #959595; text-underline-offset: 5px; }
+
+.header .desktop-menu .first-row .meet-our-team-button:hover { text-decoration: underline solid 2px var(--sixth); }
+
+.header .desktop-menu .first-row .second-column a { font-size: 20px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content { background: #959595; padding: 20px 0; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content a { font-size: 20px; color: #fff; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content ul { column-gap: 30px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content ul i { font-size: 18px; position: relative; top: 1px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content ul li.items-submenu-content a { column-gap: 8px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .second-column { column-gap: 10px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .book-a-free-class-button { padding: 10px 25px; border: 2px solid #fff; border-radius: 15px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .book-a-free-class-button:hover { border-color: var(--sixth); }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .contact-us-button { color: #959595; background: #fff; padding: 10px 25px; border: 2px solid #fff; border-radius: 15px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .contact-us-button:hover { border-color: var(--sixth); color: #fff; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content ul li.items-submenu-content { position: relative; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .items-submenu-container { display: none; z-index: 9; position: absolute; background: #959595; padding-top: 32px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .items-submenu-container a { font-size: 18px; border-bottom: 1px solid #fff; display: block; width: 285px; padding: 10px 20px; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .items-submenu-container a:hover { color: var(--sixth); }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content .items-submenu-container li:last-child a { border-bottom: 0; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content ul li.items-submenu-content a:hover ~ .items-submenu-container,
+.header .desktop-menu .desktop-menu-contact-menu-items-content .items-submenu-container:hover { display: block; }
+
+.header .desktop-menu .desktop-menu-contact-menu-items-content ul li.items-submenu-content i { font-size: 15px; position: relative; top: 2px; left: 5px; }
+
+.header .desktop-menu .customized-inner-row,
+.header .desktop-menu-contact-menu-items-content .customized-inner-row { column-gap: 30px; }
+
+.header .desktop-menu .naples-premiere-text,
+.header .desktop-menu-contact-menu-items-content .naples-premiere-text { margin-top: 10px; line-height: 1.1; max-width: 220px; }
+
+.header .desktop-menu .naples-premiere-text span,
+.header .desktop-menu-contact-menu-items-content .naples-premiere-text span { color: var(--primary); font-weight: 800 !important; }
+
+.header .fixed-header { position: fixed; z-index: 9999; padding: 20px 0; background: #959595; width: 100%; }
+
+.header .fixed-header img { max-width: 150px; }
+
+.header .fixed-header ul { column-gap: 20px; }
+
+.header .fixed-header a { font-size: 17px; color: #fff; }
+
+.header .fixed-header a i { font-size: 15px; position: relative; top: 2px; left: 5px; }
+
+.header .fixed-header li.d-flex { column-gap: 10px; }
+
+.header .fixed-header .book-a-free-class-button { padding: 5px 15px; border: 2px solid #fff; border-radius: 15px; }
+
+.header .fixed-header .book-a-free-class-button:hover { border-color: var(--sixth); }
+
+.header .fixed-header .contact-us-button { color: #959595; background: #fff; padding: 5px 15px; border: 2px solid #fff; border-radius: 15px; }
+
+.header .fixed-header .contact-us-button:hover { border-color: var(--sixth); color: #fff; }
+
+.header .fixed-header .items-submenu-container { display: none; z-index: 9; position: absolute; background: #959595; padding-top: 32px; }
+
+.header .fixed-header ul li.items-submenu-content a:hover ~ .items-submenu-container,
+.header .fixed-header .items-submenu-container:hover { display: block; }
+
+.header .fixed-header ul li.items-submenu-content a:hover { color: var(--sixth); }
+
+.header .fixed-header .items-submenu-container a { font-size: 16px; border-bottom: 1px solid #fff; display: block; width: 285px; padding: 10px 20px; }
+
+.header .fixed-header .items-submenu-container li:last-child a { border-bottom: 0; }
+
+.header .login-link { margin-left: 20px; }
+
+.header .login-link:hover { color: var(--primary); }
+
+.fun-gymnastics-and-fitness-classes-section { background-image: url(../images/custom-background-01.png); padding: 90px 0; }
+
+.fun-gymnastics-and-fitness-classes-section .row { column-gap: 50px; }
+
+.fun-gymnastics-and-fitness-classes-section .row .column { width: 50%; }
+
+.fun-gymnastics-and-fitness-classes-section .row .first-column h1,
+.fun-gymnastics-and-fitness-classes-section .row .first-column h4,
+.fun-gymnastics-and-fitness-classes-section .row .first-column a { margin-top: 20px; }
+
+.fun-gymnastics-and-fitness-classes-section .row .first-column h1 span { display: inline-block; padding: 1px 10px; background: var(--sixth); border-radius: 60px; }
+
+.fun-gymnastics-and-fitness-classes-section .row .second-column .gymnastic-girl-image { width: 100%; }
+
+.fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-01 { width: 83%; right: -35px; bottom: 20px; z-index: -1; }
+
+.fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-02 { right: -10px; top: 90px; z-index: -1; }
+
+.fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-03 { left: 28%; top: 13%; }
+
+.fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-04 { left: 60px; bottom: 35px; z-index: -1; }
+
+.our-core-programs-section { padding: 90px 0; background: #F4F4F4; }
+
+.our-core-programs-section .first-row { max-width: 525px; margin: auto; }
+
+.our-core-programs-section .first-row h3,
+.our-core-programs-section .first-row h4 { margin-top: 15px; }
+
+.our-core-programs-section .second-row { column-gap: 18px; margin-top: 50px; }
+
+.our-core-programs-section .second-row .column { padding: 35px; border-radius: 15px; box-sizing: border-box; width: 25%; }
+
+.our-core-programs-section .second-row .first-column { background: var(--secondary); }
+
+.our-core-programs-section .second-row .second-column { background: var(--quartery); }
+
+.our-core-programs-section .second-row .third-column { background: var(--fifth); }
+
+.our-core-programs-section .second-row .fourth-column { background: var(--terciary); }
+
+.our-core-programs-section a { margin: auto; margin-top: 40px; }
+
+.exciting-events-at-twist-naples-section { background-image: url(../images/custom-background-02.png); padding: 50px 0; }
+
+.exciting-events-at-twist-naples-section .row { column-gap: 20px; }
+
+.exciting-events-at-twist-naples-section .row .first-column { width: 50%; }
+
+.exciting-events-at-twist-naples-section .row .second-column { width: 50%; }
+
+.exciting-events-at-twist-naples-section .row .first-column h2 span { display: inline-block; padding: 1px 10px; background: var(--terciary); border-radius: 60px; }
+
+.exciting-events-at-twist-naples-section .row .first-column h4 { margin-top: 20px; }
+
+.exciting-events-at-twist-naples-section .row .first-column .column-content { max-width: 460px; }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row { flex-wrap: wrap; column-gap: 18px; row-gap: 18px; }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row .inner-column { display: flex; flex-direction: column; padding: 35px; box-sizing: border-box; border-radius: 15px; width: calc(50% - 9px); }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row .first-inner-column { background: var(--sixth); }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row .second-inner-column { background: var(--fifth); }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row .third-inner-column { background: var(--terciary); }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row .fourth-inner-column { background: var(--quartery); }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row .inner-column p { margin-top: 5px; margin-bottom: 10px; }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row .inner-column a { padding: 10px; margin-top: auto; text-align: center; }
+
+.exciting-events-at-twist-naples-section .row .second-column .inner-row .inner-column a:hover { color: #fff; }
+
+.on-site-school-programs-section { padding: 50px 0; background: var(--quartery); }
+
+.on-site-school-programs-section .row { column-gap: 30px; }
+
+.on-site-school-programs-section .row .column { width: 50%; }
+
+.on-site-school-programs-section .row .first-column img { width: 100%; max-width: 500px; }
+
+.on-site-school-programs-section .row .second-column h3,
+.on-site-school-programs-section .row .second-column h4 { margin-top: 20px; }
+
+.on-site-school-programs-section .row .second-column a { margin-top: 30px; }
+
+.meet-our-team-home-block-section { padding: 90px 0; background: var(--fifth); }
+
+.meet-our-team-home-block-section .first-row h3 { margin-top: 20px; }
+
+.meet-our-team-home-block-section .second-row { margin-top: 40px; flex-wrap: wrap; align-items: baseline; row-gap: 20px; }
+
+.meet-our-team-home-block-section .second-row .column { width: 16.66% }
+
+.meet-our-team-home-block-section .second-row .column img { margin: auto; width: 100%; }
+
+.yoga-program-iframe-section { padding: 90px 0; }
+
+.yoga-program-iframe-section iframe { margin-top: 30px; display: block; width: 100%; height: 1310px; }
+
+.why-families-love-twist-naples-section { background-image: url(../images/custom-background-01.png); padding: 70px 0; }
+
+.why-families-love-twist-naples-section .first-row h4 { margin-top: 20px; }
+
+.why-families-love-twist-naples-section .second-row { flex-wrap: wrap; column-gap: 25px; row-gap: 40px; max-width: 80%; margin: auto; margin-top: 50px; }
+
+.why-families-love-twist-naples-section .second-row .column { border-radius: 14px; padding: 35px; box-sizing: border-box; width: calc(50% - 25px); position: relative; }
+
+.why-families-love-twist-naples-section .second-row .column-chevron { position: absolute; bottom: -8px; left: 65px; background-color: var(--terciary); transform: rotate(0) skewX(-30deg) scale(1,.866); }
+
+.why-families-love-twist-naples-section .second-row .column-chevron:before,
+.why-families-love-twist-naples-section .second-row .column-chevron:after { content: ''; position: absolute; background-color: inherit; }
+
+.why-families-love-twist-naples-section .second-row .column-chevron,
+.why-families-love-twist-naples-section .second-row .column-chevron:before,
+.why-families-love-twist-naples-section .second-row .column-chevron:after { width: 14px; height: 14px; border-top-right-radius: 50%; }
+
+.why-families-love-twist-naples-section .second-row .column-chevron:before { transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%); }
+
+.why-families-love-twist-naples-section .second-row .column-chevron:after { transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%); }
+
+.why-families-love-twist-naples-section .second-row .column .quotes-icon { background: var(--quartery); width: 55px; height: 55px; min-width: 55px; border-radius: 50%; display: flex; align-items: center; }
+
+.why-families-love-twist-naples-section .second-row .column .quotes-icon img { max-width: 22px; margin: auto; }
+
+.why-families-love-twist-naples-section .second-row .column h4 { margin-top: 3px; }
+
+.why-families-love-twist-naples-section .second-row .column .stars { margin-top: 3px; column-gap: 5px; }
+
+.why-families-love-twist-naples-section .second-row .column .fa-star { color: var(--sixth); font-size: 10px; }
+
+.why-families-love-twist-naples-section .second-row .column .inner-row { column-gap: 30px; }
+
+.why-families-love-twist-naples-section .second-row .first-column { background: var(--terciary); }
+
+.why-families-love-twist-naples-section .second-row .second-column { background: var(--fifth); }
+
+.why-families-love-twist-naples-section .second-row .second-column .column-chevron { background: var(--fifth); }
+
+.why-families-love-twist-naples-section a { margin: auto; margin-top: 60px; }
+
+.mark-your-calendar-section { padding: 100px 0; background: var(--terciary); }
+
+.mark-your-calendar-section .first-row { max-width: 620px; margin: auto; }
+
+.mark-your-calendar-section .first-row h3,
+.mark-your-calendar-section .first-row h4 { margin-top: 20px; }
+
+.mark-your-calendar-section .second-row { max-width: 50%; margin: auto; margin-top: 50px; column-gap: 18px; }
+
+.mark-your-calendar-section .second-row .column { width: 50%; padding: 35px; box-sizing: border-box; border-radius: 14px; }
+
+.mark-your-calendar-section .second-row .first-column { background: var(--secondary); }
+
+.mark-your-calendar-section .second-row .second-column { background: var(--fifth); }
+
+.mark-your-calendar-section .second-row .date-content { margin-top: 15px; column-gap: 5px; }
+
+.mark-your-calendar-section .second-row .hour-content { margin-top: 5px; column-gap: 5px; }
+
+.mark-your-calendar-section .second-row .date-content img,
+.mark-your-calendar-section .second-row .hour-content img { width: 30px; }
+
+.instagram-feed-section { background: #f4f4f4; padding: 70px 0; }
+
+.instagram-feed-section .first-row .social-networks-content { margin-top: 15px; column-gap: 12px; }
+
+.instagram-feed-section .first-row .social-networks-content a { font-size: 20px; }
+
+.instagram-feed-section .first-row .social-networks-content a:hover { color: var(--primary); }
+
+.instagram-feed-section .second-row { margin-top: 25px; }
+
+.instagram-feed-section #instafeed { background: #f4f4f4; column-gap: 5px; }
+
+.instagram-feed-section .img-feed { width: 12.5%; }
+
+.instagram-feed-section .img-feed img,
+.instagram-feed-section .img-feed video { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; }
+
+.footer { background: #F4F4F4; padding-top: 60px; }
+
+.footer .first-row .first-column img { max-width: 180px; }
+
+.footer .first-row .first-column { width: 40%; }
+
+.footer .first-row .second-column { width: 40%; }
+
+.footer .first-row .third-column { width: 25%; }
+
+.footer .first-row .first-column .subscribe-content { margin-top: 40px; }
+
+.footer .first-row .first-column .subscribe-content form { margin-top: 12px; }
+
+.footer .first-row .first-column .subscribe-content input { outline: none; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border: 1px solid #fff; padding: 10px 20px; box-sizing: border-box; }
+
+.footer .first-row .first-column .subscribe-content button { border-radius: 0; border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+
+.footer .first-row .first-column .subscribe-content form input::placeholder { color: #959595; }
+
+.footer .first-row .second-column .footer-links-container { flex-wrap: wrap; }
+
+.footer .first-row .second-column .footer-links-container .footer-links-content { width: 33.3%; }
+
+.footer .first-row .second-column a, .footer .first-row .third-column a { display: block; }
+
+.footer .first-row .second-column .copyright-text { margin-top: 20px; }
+
+.footer .first-row .footer-links-container,
+.footer .first-row .third-column .column-content { margin-top: 10px; }
+
+.footer .first-row .footer-links-container .footer-links-content a { margin-bottom: 10px; }
+
+.footer .first-row .third-column .column-content { max-width: 200px; float: right; }
+
+.footer .first-row .third-column .footer-address-content { display: grid; row-gap: 12px; margin-top: 12px; }
+
+.footer .first-row .third-column .social-networks-content { column-gap: 12px; margin-top: 25px; }
+
+.footer .first-row .third-column .social-networks-content a { font-size: 20px; }
+
+.footer .second-row { display: none; }
+
+.footer .rednodo-copyright-block { margin-top: 60px; background: #fff; padding: 12px 0; }
+
+.footer .rednodo-copyright-block a:hover { color: var(--primary); }
+
+@media (max-width: 1500px) {
+    .header .fixed-header { display: none !important; }
+
+    .header .desktop-menu img { max-width: 150px; }
+
+    .header .desktop-menu .first-row .second-column a { font-size: 17px; }
+
+    .header .desktop-menu .desktop-menu-contact-menu-items-content a { font-size: 17px; }
+
+    .header .desktop-menu .desktop-menu-contact-menu-items-content .items-submenu-container a { font-size: 16px; width: 250px; }
+
+    .mark-your-calendar-section .first-row { max-width: 500px; }
+
+    .our-core-programs-section .first-row { max-width: 420px; }
+
+    .footer .first-row .first-column img { max-width: 150px; }
+}
+
+@media (max-width: 1250px) {
+    .fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-04 { left: -5px; bottom: 16px; }
+
+    .footer .first-row .second-column .copyright-text { margin-top: 0; }
+}
+
+@media (max-width: 1200px) {
+    .header .desktop-menu { display: none !important; }
+
+    .header .mobile-menu { display: block; }
+
+    .header .mobile-menu img { max-width: 150px; }
+
+    .header .mobile-menu .desktop-menu-contact-information-content { background: #959595; padding: 20px 0; }
+
+    .header .mobile-menu .desktop-menu-contact-information-content a { color: #fff; font-size: 17px; }
+
+    .header .desktop-menu-contact-menu-items-content { padding: 20px 0; }
+
+    .header .mobile-menu .first-row { display: flex; align-items: center; justify-content: center; text-align: center; column-gap: 30px; }
+
+    .header .mobile-menu .first-row img { max-width: 180px; margin: auto; }
+
+    .header .mobile-menu .social-networks-content { column-gap: 8px; }
+
+    .header .mobile-menu .first-row .book-a-free-class-button { color: #959595; background: #fff; padding: 10px 25px; border: 2px solid #959595; border-radius: 15px; }
+
+    .header .mobile-menu .first-row .meet-our-team-button { color: #959595; padding: 0; text-decoration: underline solid 2px #959595; text-underline-offset: 5px; }
+
+    .header .mobile-menu .second-row .menu-burguer-container { cursor: pointer; }
+
+    .header .mobile-menu .second-row .menu-burguer-container .bar { display: block; width: 35px; height: 5px; background: #959595; margin-bottom: 5px; }
+
+    .header .mobile-menu .second-row .menu-burguer-container .bar-03 { margin-bottom: 0; }
+
+    .header .mobile-menu .third-row { display: none; background: #fff; position: absolute; width: 100%; z-index: 999; border-top: 3px solid #959595; margin-top: 20px; box-shadow: 0 2px 20px rgb(0 0 0 / 10%); }
+
+    .header .mobile-menu .third-row a { display: block; padding: 18px 30px; border-bottom: 1px solid #e5e5e5; background: #fff; width: 100%; box-sizing: border-box; }
+
+    .header .mobile-menu .third-row a:hover { background: #959595; color: #fff; border-bottom-color: #959595; }
+
+    .header .mobile-menu .third-row i { transition: all 0.6s; }
+
+    .header .mobile-menu .third-row a:hover ~ i { color: #fff; }
+
+    .header .mobile-menu .third-row li:last-child a { border-bottom: 0; }
+
+    .header .mobile-menu .third-row .submenu-items { display: none; min-width: 100%; }
+
+    .header .mobile-menu .third-row .submenu-items a { padding: 18px 60px; width: 100%; }
+
+    .header .mobile-menu .third-row .subitems-item i { transform: rotate(90deg); float: right; position: absolute; top: 0; right: 0; line-height: 66px; width: 59px; height: 56px; text-align: center; cursor: pointer; overflow: hidden; }
+
+    .why-families-love-twist-naples-section .second-row { max-width: 100%; }
+
+    .meet-our-team-home-block-section .second-row .column { width: 25%; }
+
+    .meet-our-team-home-block-section .second-row .column img { max-width: 190px; }
+
+    .mark-your-calendar-section .second-row { max-width: 80%; }
+
+    .instagram-feed-section #instafeed { flex-wrap: wrap; row-gap: 5px; }
+
+    .instagram-feed-section .img-feed { width: calc(25.1% - 5px); }
+
+    .footer .first-row { flex-wrap: wrap; }
+
+    .footer .first-row .copyright-text { display: none; }
+
+    .footer .first-row .column { width: 100%; text-align: center; }
+
+    .footer .first-row .first-column img { margin: auto; }
+
+    .footer .first-row .subscribe-content { text-align: center; }
+
+    .footer .first-row .subscribe-content .form-group { justify-content: center; }
+
+    .footer .first-row .second-column { margin-top: 40px; }
+
+    .footer .first-row .third-column  { margin-top: 10px; }
+
+    .footer .first-row .third-column .social-networks-content { justify-content: center; }
+
+    .footer .first-row .third-column .column-content { max-width: 100%; float: initial; }
+
+    .footer .second-row { display: block; margin-top: 30px; }
+
+    .footer .second-row .copyright-text { text-align: center; }
+}
+
+@media (max-width: 992px) {
+    .fun-gymnastics-and-fitness-classes-section .row { flex-wrap: wrap; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .column { width: 100%; text-align: center; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .first-column a { margin: auto; margin-top: 20px; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .second-column { margin-top: 100px; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .second-column img { max-width: 500px; margin: auto; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-01 { max-width: 500px; width: 100%; right: auto; left: 50%; transform: translateX(-50%); }
+
+    .fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-02 { right: 10%; top: 79px; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-03 { left: auto; right: 70%; top: -5px; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-04 { left: 10%; }
+
+    .our-core-programs-section .second-row { flex-wrap: wrap; row-gap: 18px; }
+
+    .our-core-programs-section .second-row .column { width: calc(50% - 9px); }
+
+    .exciting-events-at-twist-naples-section { padding: 90px 0; }
+
+    .exciting-events-at-twist-naples-section .row { flex-wrap: wrap; }
+
+    .exciting-events-at-twist-naples-section .row .column { width: 100%; text-align: center; }
+
+    .exciting-events-at-twist-naples-section .row .first-column .column-content { max-width: 100%; }
+
+    .exciting-events-at-twist-naples-section .row .second-column { margin-top: 50px; }
+
+    .on-site-school-programs-section .row { flex-wrap: wrap; }
+
+    .on-site-school-programs-section .row .column { width: 100%; text-align: center; }
+
+    .on-site-school-programs-section .row .first-column img { margin: auto; }
+
+    .on-site-school-programs-section .row .second-column { margin-top: 50px; }
+
+    .on-site-school-programs-section .row .second-column a { margin: auto; margin-top: 30px; }
+
+    .meet-our-team-home-block-section .second-row .column { width: 33.33%; }
+
+    .why-families-love-twist-naples-section .second-row { flex-wrap: wrap; row-gap: 40px; }
+
+    .why-families-love-twist-naples-section .second-row .column { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .header .mobile-menu .contact-buttons-content { display: flex; flex-direction: column; row-gap: 10px; }
+
+    .mark-your-calendar-section .second-row { flex-wrap: wrap; row-gap: 18px; }
+
+    .mark-your-calendar-section .second-row .column { width: 100%; max-width: 300px; text-align: center; }
+
+    .mark-your-calendar-section .second-row .date-content,
+    .mark-your-calendar-section .second-row .hour-content { justify-content: center; }
+}
+
+@media (max-width: 750px) {
+    .yoga-program-iframe-section iframe { height: 1000px; }
+}
+
+@media (max-width: 620px) {
+    .fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-02 { right: 0; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-03 { right: 80%; }
+
+    .fun-gymnastics-and-fitness-classes-section .row .second-column .animatable-vector-04 { left: 0; max-width: 240px; }
+}
+
+@media (max-width: 575px) {
+	.header .desktop-menu-contact-menu-items-content .naples-premiere-text { display: none; }
+
+    .our-core-programs-section .second-row .column { width: 100%; max-width: 300px; margin: auto; }
+
+    .exciting-events-at-twist-naples-section .row .second-column .inner-row .inner-column { width: 100%; max-width: 300px; margin: auto; }
+
+    .meet-our-team-home-block-section .second-row .column { width: 50%; }
+
+    .instagram-feed-section .img-feed { width: calc(50.2% - 5px); }
+ 
+    .footer .first-row .subscribe-content .form-group { flex-wrap: wrap; }
+
+    .footer .first-row .second-column .footer-links-container { flex-wrap: wrap; }
+
+    .footer .first-row .second-column .footer-links-container .footer-links-content { width: 100%; }
+}
+
+@media (max-width: 440px) {
+    .footer .first-row .subscribe-content .form-group { flex-direction: column; }
+
+    .footer .first-row .subscribe-content .form-group input, .footer .first-row .first-column .subscribe-content button { border-radius: 10px; }
+
+    .footer .first-row .first-column .subscribe-content button { margin-top: 15px; }
+}
+
+/* end home page styles */
+
+
+
+/* PNO page styles */
+
+.pno-schedule-banner-section { padding-top: 90px; }
+
+.pno-schedule-banner-section .row { column-gap: 50px; }
+
+.pno-schedule-banner-section .row .column { width: 50%; }
+
+.pno-schedule-banner-section .row .first-column .column-content { margin: 7.5% 0; max-width: 560px; float: right; padding-left: 20%; }
+
+.pno-schedule-banner-section .row .first-column h1 span { display: inline-block; padding: 1px 10px; background: var(--secondary); border-radius: 60px; }
+
+.pno-schedule-banner-section .row .first-column h4 { margin-top: 20px; }
+
+.pno-schedule-banner-section .row .first-column .schedule-content { margin-top: 20px; }
+
+.pno-schedule-banner-section .row .first-column .schedule-content .date-content,
+.pno-schedule-banner-section .row .first-column .schedule-content .hour-content { column-gap: 5px; }
+
+.pno-schedule-banner-section .row .first-column .schedule-content .hour-content { margin-top: 7px; }
+
+.pno-schedule-banner-section .row .first-column a { margin-top: 20px; }
+
+.pno-schedule-banner-section .row .second-column img { width: 100%; float: right; max-width: 65%; }
+
+.pno-in-naples-section { padding: 60px 0; background: var(--secondary); }
+
+.pno-in-naples-section .row { column-gap: 70px; }
+
+.pno-in-naples-section .row .column { width: 50%; }
+
+.pno-in-naples-section .row .first-column img { width: 100%; }
+
+.pno-in-naples-section .row .second-column h2 { margin-top: 20px; }
+
+.pno-in-naples-section .row .second-column h4 { margin-top: 20px; }
+
+.pno-in-naples-section .row .second-column a { margin-top: 30px; }
+
+.high-energy-night-section { padding: 110px 0; background: #F4F4F4; }
+
+.high-energy-night-section .first-row .text-content { max-width: 700px; margin: auto; }
+
+.high-energy-night-section .first-row h3 { margin-top: 20px; }
+
+.high-energy-night-section .first-row h4 { margin-top: 20px; }
+
+.high-energy-night-section .second-row { margin-top: 40px; column-gap: 15px; }
+
+.high-energy-night-section .second-row .column { width: calc(20% - 7.5px); box-shadow: 0 2px 20px rgb(0 0 0 / 15%); border-radius: 15px; background: #fff; padding: 30px; box-sizing: border-box; }
+
+.high-energy-night-section .second-row .column img { margin: auto; }
+
+.high-energy-night-section .second-row .column p { margin-top: 15px; }
+
+.pno-next-dates-section { padding: 90px 0; background: var(--terciary); }
+
+.pno-next-dates-section .row { column-gap: 35px; }
+
+.pno-next-dates-section .row .column { width: 50%; }
+
+.pno-next-dates-section .inner-row { column-gap: 18px; margin-top: 20px; }
+
+.pno-next-dates-section .inner-row .inner-column { padding: 35px; box-sizing: border-box; border-radius: 15px; }
+
+.pno-next-dates-section .inner-row .first-inner-column { background: var(--secondary); }
+
+.pno-next-dates-section .inner-row .second-inner-column { background: var(--quartery); }
+
+.pno-next-dates-section .inner-row p { margin-top: 5px; }
+
+.pno-next-dates-section .inner-row .inner-column .column-text { background: #fff; text-align: center; padding: 7px 12px; box-sizing: border-box; border-radius: 12px; margin: auto; max-width: 170px; margin-top: 10px; }
+
+.pno-next-dates-section .row .second-column h4 { margin-top: 10px; }
+
+.pno-next-dates-section .row .second-column form { margin-top: 25px; }
+
+.pno-next-dates-section .row .second-column form .form-group.d-flex { column-gap: 13px; }
+
+.pno-next-dates-section .row .second-column form .form-group { margin-bottom: 13px; }
+
+.pno-next-dates-section .row .second-column form .last-form-group { margin-bottom: 0; }
+
+.pno-next-dates-section .row .second-column form input { width: 100%; border: 1px solid #C4C4C4; border-radius: 10px; padding: 10px 20px; box-sizing: border-box; }
+
+.pno-next-dates-section .row .second-column form input::placeholder { color: #959595; }
+
+.pno-next-dates-section .row .second-column form button { margin-top: 25px; }
+
+.what-is-pno-section{ padding: 60px 0; }
+
+.why-do-pno-section {padding: 60px 0 ; background: #009FE2;}
+
+.why-do-pno-section h2, .why-do-pno-section li {color: white;}
+
+.why-do-pno-section h2, .why-do-pno-section ul{margin-bottom: 15px}
+
+.why-do-pno-section li{list-style: initial;margin-left: 20px;}
+
+.why-do-pno-section .row .column img, .what-is-pno-section .row .column img{width: 100%}
+
+.what-is-pno-section h2 span{background:#642E8B; display: inline-block; padding: 1px 10px; border-radius: 60px;}
+
+.what-is-pno-section h2, .what-is-pno-section p {margin-bottom: 15px}
+
+.what-is-pno-section .row .column, .why-do-pno-section .row .column{width: 50%;}
+
+.our-local-supporters-section { padding: 80px 0; }
+
+.our-local-supporters-section .second-row { margin-top: 20px; }
+
+.our-local-supporters-section .slick-track { display: flex; }
+
+.our-local-supporters-section .slick-track .slick-slide { display: flex; height: auto; align-items: center; justify-content: center; }
+
+.our-local-supporters-section img { margin: auto; max-width: 175px; transform: scale(0.8); }
+
+.our-location-map-section iframe { border: 0; width: 100%; height: 220px; }
+
+.pno-faq-section {padding: 60px 0; background: #F4F4F4}
+
+.pno-faq-section .first-column{width: 30%}
+
+.pno-faq-section .second-column{width: 70%; border-radius: 25px; display: flex; flex-direction: column;background: #C6C6C6; row-gap: 1px}
+
+.pno-faq-section .first-column h2, .pno-faq-section .first-column p{margin-bottom: 15px}
+
+.pno-faq-section .faq-element{background: white; display: flex; align-items: center; justify-content: center;flex-direction: column; cursor:pointer}
+
+.pno-faq-section .faq-element:first-child{border-top-right-radius: 15px; border-top-left-radius: 15px;}
+
+.pno-faq-section .faq-element:last-child{border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;}
+
+
+.pno-faq-section .title-faq{transition: .8s; width: 55%;padding: 23px 0; }
+
+.pno-faq-section .title-faq h3{font-size: 16px}
+
+.pno-faq-section .title-faq .rotate{margin-left: auto; position: relative;transition: .8s}
+
+.pno-faq-section .fa-plus{margin-right: 20px; color: #F7941D}
+
+.pno-faq-section .faq-element.active .title-faq *{color: white!important}
+
+.pno-faq-section .faq-text{padding:20px; display: none}
+
+.pno-faq-section .faq-element.active .faq-text{display: block}
+
+.pno-faq-section .faq-element.active .rotate{rotate: 90deg;}
+
+.pno-faq-section .faq-btn{transition: .8s; display: flex;transition: .8s; width: 100%; justify-content: center}
+
+.pno-faq-section .faq-element.active .faq-btn{background:#F7941D }
+
+
+
+
+
+@media (max-width: 1920px) {
+    .pno-schedule-banner-section .row .second-column img { max-width: 85%; }
+}
+
+@media (max-width: 1500px) {
+	h1 { font-size: 48px; }
+
+    h2 { font-size: 32px; }
+
+	h3 { font-size: 24px; }
+
+	h4 { font-size: 16px; }
+
+	p, a, li, span, button, select, input, textarea { font-size: 15px; }
+
+	.pno-schedule-banner-section .row .first-column .column-content { margin-bottom: 80px; }
+
+    .pno-schedule-banner-section .row .second-column img { max-width: 100%; }
+}
+
+@media (max-width: 992px) {
+	.pno-schedule-banner-section .row { flex-wrap: wrap; }
+
+	.pno-schedule-banner-section .row .column { width: 100%; text-align: center; }
+
+	.pno-schedule-banner-section .row .first-column .column-content { padding-left: 0; float: initial; max-width: 80%; margin: auto; }
+
+    .pno-schedule-banner-section .row .first-column .schedule-content .date-content, .pno-schedule-banner-section .row .first-column .schedule-content .hour-content { justify-content: center; }
+
+    .pno-schedule-banner-section .row .first-column h4 { max-width: 80%; margin: auto; margin-top: 20px; }
+
+    .pno-schedule-banner-section .row .first-column a { margin: auto; margin-top: 20px; }
+
+    .pno-schedule-banner-section .row .second-column { margin-top: 50px; }
+
+    .pno-schedule-banner-section .row .second-column img { content: url(../images/mobile-pno-schedule-banner.png); max-width: 500px; margin: auto; float: initial; }
+
+    .pno-in-naples-section .row { flex-wrap: wrap; }
+
+    .pno-in-naples-section .row .column { width: 100%; text-align: center; }
+
+    .pno-in-naples-section .row .first-column img { max-width: 500px; margin: auto; }
+
+    .pno-in-naples-section .row .second-column { margin-top: 50px; }
+
+    .pno-in-naples-section .row .second-column a { margin: auto; margin-top: 30px; }
+
+    .pno-in-naples-section .row .second-column h4 { max-width: 80%; margin: auto; margin-top: 20px; }
+
+    .high-energy-night-section .second-row { flex-wrap: wrap; justify-content: center; column-gap: 12px; row-gap: 12px; }
+
+    .high-energy-night-section .second-row .column { width: calc(33.3% - 8px); }
+
+    .pno-next-dates-section .row { flex-wrap: wrap; }
+
+    .pno-next-dates-section .row .column { width: 100%; text-align: center; }
+
+    .pno-next-dates-section .row .second-column { margin-top: 50px; }
+
+    .pno-next-dates-section .row .second-column form button { margin: auto; margin-top: 25px; }
+
+    .what-is-pno-section .row .column, .why-do-pno-section .row .column{width: 100%}
+
+    .what-is-pno-section .row, .why-do-pno-section .row {flex-wrap:wrap;}
+
+    .what-is-pno-section .column img, .why-do-pno-section .column img { max-width: 500px; margin: auto;}
+
+    .what-is-pno-section .column , .why-do-pno-section .column {margin-top: 20px; text-align: center; display: flex; flex-direction: column; align-items: center;}
+
+    .why-do-pno-section li{list-style: none; margin-bottom:10px}
+
+    .why-do-pno-section .first-column{order: 2}
+
+    .pno-faq-section .row{flex-wrap: wrap;}
+
+    .pno-faq-section .column{width: 100%;}
+
+    .pno-faq-section .first-column{text-align: center;}
+
+    .pno-faq-section .first-column a{margin:auto ;margin-bottom: 30px;}
+
+    .pno-faq-section .title-faq{width: 90%}
+
+}
+
+@media (max-width: 768px) {
+	.high-energy-night-section .second-row { flex-direction: column; }
+
+	.high-energy-night-section .second-row .column { margin: auto; width: 50%; max-width: 300px; min-width: 260px; }
+}
+
+@media (max-width: 575px) {
+	.pno-next-dates-section .row .second-column form .form-group.d-flex { flex-wrap: wrap; }
+
+	.pno-next-dates-section .row .second-column form input:last-child { margin-top: 13px; }
+
+	.pno-next-dates-section .inner-row { flex-wrap: wrap; }
+
+	.pno-next-dates-section .inner-row .inner-column { width: 100%; }
+
+	.pno-next-dates-section .inner-row .second-inner-column { margin-top: 20px; }
+}
+
+/* end PNO page styles */
+
+
+
+/* camps page styles */
+
+.seasonal-gymnastics-banner-section { background-image: url(../images/custom-background-04.png); padding: 90px 0; }
+
+.seasonal-gymnastics-banner-section .row { column-gap: 50px; }
+
+.seasonal-gymnastics-banner-section .row .column { width: 50%; }
+
+.seasonal-gymnastics-banner-section .row .first-column h1 { margin-top: 20px; }
+
+.seasonal-gymnastics-banner-section .row .first-column h1 span { display: inline-block; padding: 1px 10px; background: var(--quartery); border-radius: 60px; }
+
+.seasonal-gymnastics-banner-section .row .first-column h4 { margin-top: 20px; }
+
+.seasonal-gymnastics-banner-section .row .second-column img { width: 100%; }
+
+.no-school-section { padding: 90px 0; background: #F4F4F4; }
+
+.no-school-section .first-row .text-content { max-width: 700px; margin: auto; }
+
+.no-school-section .first-row h3 { margin-top: 20px; }
+
+.no-school-section .first-row h4 { margin-top: 20px; }
+
+.no-school-section .special-wordings-content { margin-top: 35px; }
+
+.no-school-section .special-wordings-content h1 { box-sizing: border-box; display: inline-block; padding: 10px 20px; border-radius: 60px; }
+
+.no-school-section .special-wordings-content .first-text { position: relative; left: 10px; transform: rotate(-5deg); background: #FFC909; }
+
+.no-school-section .special-wordings-content .second-text { background: #EC008C; }
+
+.no-school-section .special-wordings-content .third-text { position: relative; right: 10px; transform: rotate(5deg); background: #009FE2; }
+
+.no-school-section .second-row { margin-top: 60px; column-gap: 15px; }
+
+.no-school-section .second-row .column { width: calc(20% - 7.5px); box-shadow: 0 2px 20px rgb(0 0 0 / 15%); border-radius: 15px; background: #fff; padding: 30px; box-sizing: border-box; }
+
+.no-school-section .second-row .column img { margin: auto; }
+
+.no-school-section .second-row .column p { margin-top: 15px; }
+
+.no-school-section a { margin: auto; margin-top: 35px; }
+
+.experience-in-every-season-section { background-image: url(../images/custom-background-05.png); padding: 110px 0; }
+
+.experience-in-every-season-section .first-row { max-width: 800px; margin: auto; }
+
+.experience-in-every-season-section .first-row h4 { max-width: 670px; margin: auto; margin-top: 20px; }
+
+.experience-in-every-season-section .second-row { column-gap: 18px; max-width: 80%; margin: auto; margin-top: 40px; }
+
+.experience-in-every-season-section .second-row .column { border-radius: 15px; padding: 30px; box-sizing: border-box; width: 33.3%; }
+
+.experience-in-every-season-section .second-row .first-column { background: #9ABE37; }
+
+.experience-in-every-season-section .second-row .second-column { background: #EC008C; }
+
+.experience-in-every-season-section .second-row .third-column { background: #009FE2; }
+
+.experience-in-every-season-section .second-row .column img { margin: auto; }
+
+.experience-in-every-season-section .second-row .column h4 { margin-top: 20px; }
+
+.experience-in-every-season-section .second-row .column p { margin-top: 10px; }
+
+.experience-in-every-season-section a { margin: auto; margin-top: 35px; }
+
+.seasons-camps-calendar-section { padding: 90px 0; background: var(--primary); }
+
+.seasons-camps-calendar-section .second-row { margin-top: 40px; column-gap: 15px; }
+
+.seasons-camps-calendar-section .second-row .column { width: calc(20% - 7.5px); box-shadow: 0 2px 20px rgb(0 0 0 / 15%); border-radius: 15px; background: #fff; padding: 30px; box-sizing: border-box; }
+
+.seasons-camps-calendar-section .second-row .column img { margin: auto; }
+
+.seasons-camps-calendar-section .second-row .column p { margin-top: 15px; }
+
+.kids-camps-section { padding: 90px 0; }
+
+.kids-camps-section .first-row h2 { margin-top: 10px; }
+
+.kids-camps-section .first-row h4:last-child { margin-top: 10px; }
+
+.kids-camps-section .second-row { margin-top: 40px; flex-wrap: wrap; row-gap: 18px; column-gap: 18px; }
+
+.kids-camps-section .second-row .column { display: flex; flex-direction: column; align-items: center; padding: 35px; box-sizing: border-box; border-radius: 15px; width: calc(33.3% - 18px); }
+
+.kids-camps-section .second-row .column p { margin-top: 5px; }
+
+.kids-camps-section .second-row .column h3 { font-size: 40px; margin-top: 10px; }
+
+.kids-camps-section .second-row .column h3 span { font-size: 20px; color: #fff; }
+
+.kids-camps-section .second-row .column ul { margin-top: 10px; margin-bottom: 20px; padding-left: 30px; }
+
+.kids-camps-section .second-row .column ul li { list-style: initial; color: #fff; }
+
+.kids-camps-section .second-row .column a { text-align: center; max-width: 120px; margin-top: auto; }
+
+.kids-camps-section .second-row .column a:hover { color: #fff; }
+
+@media (max-width: 1500px) {
+    .experience-in-every-season-section .first-row h4 { max-width: 550px; }
+
+    .kids-camps-section .second-row .column h3 { font-size: 32px; }
+}
+
+@media (max-width: 1200px) {
+    .kids-camps-section .second-row .column { width: calc(50% - 9px); }
+}
+
+@media (max-width: 992px) {
+	.seasonal-gymnastics-banner-section .row { flex-wrap: wrap; }
+
+	.seasonal-gymnastics-banner-section .row .column { width: 100%; text-align: center; }
+
+    .seasonal-gymnastics-banner-section .row .second-column { margin-top: 50px; }
+
+	.seasonal-gymnastics-banner-section .row .second-column img { max-width: 500px; margin: auto; }
+
+	.no-school-section .second-row { flex-wrap: wrap; justify-content: center; column-gap: 12px; row-gap: 12px; }
+
+    .no-school-section .second-row .column { width: calc(33.3% - 8px); }
+
+    .no-school-section .special-wordings-content { flex-wrap: wrap; flex-direction: column; row-gap: 0; }
+
+    .no-school-section .special-wordings-content h1 { text-align: center; margin: auto; min-width: 300px; left: auto !important; right: 0 !important; }
+
+    .experience-in-every-season-section .second-row { flex-wrap: wrap; justify-content: center; }
+
+    .experience-in-every-season-section .second-row .column { width: calc(50% - 12.5px); }
+
+    .experience-in-every-season-section .second-row .third-column { margin-top: 25px; }
+
+    .seasons-camps-calendar-section .second-row { flex-wrap: wrap; justify-content: center; column-gap: 12px; row-gap: 12px; }
+
+    .seasons-camps-calendar-section .second-row .column { width: calc(33.3% - 8px); }
+}
+
+@media (max-width: 768px) {
+	.no-school-section .second-row { flex-direction: column; }
+
+	.no-school-section .second-row .column { margin: auto; width: 50%; max-width: 300px; min-width: 260px; }
+
+	.seasons-camps-calendar-section .second-row { flex-direction: column; }
+
+	.seasons-camps-calendar-section .second-row .column { margin: auto; width: 50%; max-width: 300px; min-width: 260px; }
+
+    .experience-in-every-season-section .second-row .column { width: 50%; max-width: 300px; min-width: 260px; }
+
+    .experience-in-every-season-section .second-row .second-column { margin-top: 25px; }
+
+    .kids-camps-section .row .column { width: 100%; max-width: 100%; margin: auto; }
+}
+
+/* end camps page styles */
+
+
+
+/* about us page styles */
+
+.about-us-section { padding: 90px 0; }
+
+.about-us-section .row { column-gap: 100px; }
+
+.about-us-section .row .column { width: 50%; }
+
+.about-us-section .row .first-column img { width: 100%; }
+
+.about-us-section .row .second-column h1 { margin-top: 20px; }
+
+.about-us-section .row .second-column h4 { margin-top: 20px; }
+
+.our-story-section { background: #EC008C; padding-bottom: 70px; }
+
+.our-story-section .row { column-gap: 50px; }
+
+.our-story-section .row .column { width: 50%; }
+
+.our-story-section .row .first-column { display: flex; align-items: flex-end; justify-content: center; flex-direction: column; }
+
+.our-story-section .row .first-column .column-content { max-width: 560px; float: right; padding-left: 20%; margin-top: 7.5%; margin-bottom: 0; }
+
+.our-story-section .row .first-column h2 { margin-top: 20px; }
+
+.our-story-section .row .first-column p { margin-top: 20px; }
+
+.our-story-section .row .first-column p:first-child { margin-top: 0; }
+
+.our-story-section .row .first-column a { margin-top: 30px; }
+
+.our-story-section .row .second-column img { width: 100%; max-width: 65%; float: right; margin-top: -10px; }
+
+.real-results-lasting-impact-section { padding: 90px 0; }
+
+.real-results-lasting-impact-section .row { column-gap: 120px; }
+
+.real-results-lasting-impact-section .row .column { width: 50%; }
+
+.real-results-lasting-impact-section .row .first-column img { width: 100%; }
+
+.real-results-lasting-impact-section .row .second-column h2 { margin-top: 20px; }
+
+.real-results-lasting-impact-section .row .second-column p { margin-top: 20px; }
+
+.real-results-lasting-impact-section .row .second-column a { margin-top: 30px; }
+
+.why-choose-us-section { background: #F4F4F4; padding: 140px 0; }
+
+.why-choose-us-section .first-row h2 { margin-top: 20px; }
+
+.why-choose-us-section .first-row h4 { margin-top: 20px; }
+
+.why-choose-us-section .second-row { column-gap: 18px; margin-top: 50px; }
+
+.why-choose-us-section .second-row .column { padding: 35px; border-radius: 15px; box-sizing: border-box; width: 25%; }
+
+.why-choose-us-section .second-row .first-column { background: var(--secondary); }
+
+.why-choose-us-section .second-row .second-column { background: var(--fifth); }
+
+.why-choose-us-section .second-row .third-column { background: var(--quartery); }
+
+.why-choose-us-section .second-row .fourth-column { background: var(--primary); }
+
+.why-choose-us-section .second-row .column img { margin: auto; }
+
+.why-choose-us-section .second-row .column h4 { margin-top: 10px; }
+
+.why-choose-us-section .second-row .column p { margin-top: 12px; }
+
+.why-choose-us-section .first-row { max-width: 700px; margin: auto; }
+
+@media (max-width: 1500px) {
+    .about-us-section .row .column .column-content { max-width: 460px; }
+
+    .our-story-section .row .second-column img { max-width: 85%; }
+
+    .why-choose-us-section .first-row { max-width: 580px; }
+}
+
+@media (max-width: 1200px) {
+    .our-story-section .row .second-column img { max-width: 100%; }
+
+    .our-story-section .row { align-items: center; }
+}
+
+@media (max-width: 992px) {
+    .about-us-section .row { flex-wrap: wrap; }
+
+    .about-us-section .row .column { width: 100%; text-align: center; }
+
+    .about-us-section .row .first-column img { margin: auto; max-width: 500px; }
+
+    .about-us-section .row .second-column { margin-top: 50px; }
+
+    .our-story-section { padding-top: 90px; padding-bottom: 90px; }
+
+    .our-story-section .row { flex-wrap: wrap; }
+
+    .our-story-section .row .column { width: 100%; text-align: center; }
+
+    .our-story-section .row .first-column .column-content { max-width: 80%; float: initial; padding-left: 0; margin: auto; }
+
+    .our-story-section .row .first-column a { margin: auto; margin-top: 30px; }
+
+    .our-story-section .row .second-column img { max-width: 500px; float: right; }
+
+    .real-results-lasting-impact-section .row { flex-wrap: wrap; }
+
+    .real-results-lasting-impact-section .row .column { width: 100%; text-align: center; }
+
+    .real-results-lasting-impact-section .row .first-column img { margin: auto; max-width: 500px; }
+
+    .real-results-lasting-impact-section .row .second-column { margin-top: 50px; }
+
+    .real-results-lasting-impact-section .row .second-column a { margin: auto; margin-top: 30px; }
+
+    .why-choose-us-section { padding: 90px 0; }
+
+    .why-choose-us-section .second-row { flex-wrap: wrap; row-gap: 18px; }
+
+    .why-choose-us-section .second-row .column { width: calc(50% - 9px); }
+}
+
+@media (max-width: 575px) {
+    .why-choose-us-section .second-row .column { width: 100%; max-width: 300px; margin: auto; }
+}
+
+/* end about us page styles */
+
+
+
+/* contact us page styles */
+
+.contact-twist-naples-section { background-image: url(../images/custom-background-06.png); padding: 120px 0; position: relative; }
+
+.contact-twist-naples-section .vector-01,
+.contact-twist-naples-section .vector-02,
+.contact-twist-naples-section .vector-03,
+.contact-twist-naples-section .vector-04,
+.contact-twist-naples-section .vector-05,
+.contact-twist-naples-section .vector-06 { position: absolute; z-index: 9; }
+
+.contact-twist-naples-section .vector-01 { left: 100px; }
+
+.contact-twist-naples-section .vector-02 { left: 0; bottom: 70px; }
+
+.contact-twist-naples-section .vector-03 { top: 0; right: 35px; }
+
+.contact-twist-naples-section .vector-04 { right: 100px; bottom: 25px; }
+
+.contact-twist-naples-section .vector-05 { left: 150px; bottom: -30px; }
+
+.contact-twist-naples-section .vector-06 { right: 0; bottom: -100px; }
+
+.contact-twist-naples-section .container { position: relative; }
+
+.contact-twist-naples-section .text-content { max-width: 660px; margin: auto; }
+
+.contact-twist-naples-section .text-content h1 { margin-top: 20px; }
+
+.contact-twist-naples-section .text-content span { background: var(--fifth); color: #fff; display: inline-block; border-radius: 60px; padding: 1px 10px; }
+
+.contact-twist-naples-section .text-content h4 { position: relative; z-index: 9; margin-top: 30px; }
+
+.contact-twist-naples-section .text-content a { position: relative; z-index: 99; margin: auto; margin-top: 20px; }
+
+.how-can-we-help-section { padding-top: 60px; padding-bottom: 90px; background: var(--quartery); }
+
+.how-can-we-help-section .row { column-gap: 120px; }
+
+.how-can-we-help-section .row .column { width: 50%; }
+
+.how-can-we-help-section .row .first-column img { width: 100%; }
+
+.how-can-we-help-section .row .second-column h4 { margin-top: 20px; }
+
+.how-can-we-help-section .row .second-column form { margin-top: 25px; }
+
+.how-can-we-help-section .row .second-column form .form-group.d-flex { column-gap: 13px; }
+
+.how-can-we-help-section .row .second-column form .form-group { margin-bottom: 13px; }
+
+.how-can-we-help-section .row .second-column form .last-form-group { margin-bottom: 0; }
+
+.how-can-we-help-section .row .second-column form input { outline: none; width: 100%; border: 1px solid #C4C4C4; border-radius: 10px; padding: 10px 20px; box-sizing: border-box; }
+
+.how-can-we-help-section .row .second-column form textarea { outline: none; width: 100%; resize: none; border: 1px solid #C4C4C4; border-radius: 10px; padding: 10px 20px; min-height: 150px; box-sizing: border-box; }
+
+.how-can-we-help-section .row .second-column form input::placeholder,
+.how-can-we-help-section .row .second-column form textarea::placeholder { color: #959595; }
+
+.how-can-we-help-section .row .second-column form input:focus,
+.how-can-we-help-section .row .second-column form textarea:focus { border-color: var(--primary); }
+
+.how-can-we-help-section .row .second-column form button { margin-top: 25px; }
+
+.join-twist-insiders-club-section { background: var(--fifth); }
+
+.join-twist-insiders-club-section .row .column { width: 50%; }
+
+.join-twist-insiders-club-section .row .first-column .column-content { max-width: 510px; float: right; margin-right: 150px; padding-left: 20%; }
+
+.join-twist-insiders-club-section .row .first-column h3 { margin-top: 20px; margin-bottom:20px }
+
+.join-twist-insiders-club-section .row .second-column img { width: 100%; position: relative; z-index: 9; min-height: 400px; object-fit: cover; }
+
+@media (max-width: 1500px) {
+    .contact-twist-naples-section .vector-01 { max-width: 90px; }
+
+    .contact-twist-naples-section .vector-02 { max-width: 85px; }
+
+    .contact-twist-naples-section .vector-03 { max-width: 180px; }
+
+    .contact-twist-naples-section .vector-04 { max-width: 60px; }
+
+    .contact-twist-naples-section .vector-05 { max-width: 30px; }
+
+    .contact-twist-naples-section .vector-06 { max-width: 140px; }
+}
+
+@media (max-width: 1200px) {
+    .contact-twist-naples-section .vector-01 { left: 55px; }
+
+    .contact-twist-naples-section .vector-03 { right: -30px; }
+
+    .contact-twist-naples-section .vector-04 { bottom: -90px; }
+}
+
+@media (max-width: 1100px) {
+    .contact-twist-naples-section .vector-01 { left: 15px; }
+
+    .contact-twist-naples-section .vector-03 { right: -70px; }
+}
+
+@media (max-width: 992px) {
+    .contact-twist-naples-section .vector-01 { max-width: 70px; }
+
+    .contact-twist-naples-section .vector-02 { max-width: 60px; }
+
+    .contact-twist-naples-section .vector-03 { max-width: 160px; }
+
+    .contact-twist-naples-section .vector-04 { max-width: 46px; }
+
+    .contact-twist-naples-section .vector-05 { max-width: 22px; }
+
+    .contact-twist-naples-section .vector-06 { max-width: 110px; }
+
+    .join-twist-insiders-club-section .row { flex-wrap: wrap; }
+
+    .join-twist-insiders-club-section .row .column { width: 100%; }
+
+    .join-twist-insiders-club-section .row .first-column { padding: 50px 0; }
+
+    .join-twist-insiders-club-section .row .first-column .column-content { text-align: center; max-width: 80%; padding-left: 0; float: initial; margin: auto; }
+
+    .join-twist-insiders-club-section .row .first-column .column-content br { display: none; }
+
+    .join-twist-insiders-club-section .row .second-column img { min-height: auto; }
+
+    .how-can-we-help-section .row { flex-wrap: wrap; }
+
+    .how-can-we-help-section .row .column { width: 100%; text-align: center; }
+
+    .how-can-we-help-section .row .first-column img { max-width: 500px; margin: auto; }
+
+    .how-can-we-help-section .row .second-column { margin-top: 50px; }
+
+    .how-can-we-help-section .row .second-column button { margin: auto; margin-top: 30px; }
+
+    .contact-twist-naples-section .vector-01 { top: -100px; left: -25px; }
+
+    .contact-twist-naples-section .vector-02 { bottom: 5px; }
+
+    .contact-twist-naples-section .vector-03 { top: -100px; right: -35px; }
+}
+
+@media (max-width: 575px) {
+    .how-can-we-help-section .row .second-column form .form-group.d-flex { flex-wrap: wrap; }
+
+    .how-can-we-help-section .row .second-column form input:last-child { margin-top: 13px; }
+
+    .contact-twist-naples-section .vector-06 { max-width: 90px; bottom: -60px; }
+
+    .join-twist-insiders-club-section .second-row form .form-group.d-flex { flex-wrap: wrap; }
+
+    .join-twist-insiders-club-section .second-row form input { width: 100%; border-radius: 10px; }
+
+    .join-twist-insiders-club-section .second-row form button { border-radius: 10px; width: 100%; margin-top: 15px; }
+}
+
+/* end contact us page styles */
+
+
+
+/* yoga page styles */
+
+.parent-yoga-classes-section { background: #F4F4F4; padding-top: 30px; padding-bottom: 90px; }
+
+.parent-yoga-classes-section .row { column-gap: 50px; }
+
+.parent-yoga-classes-section .row .column { width: 50%; }
+
+.parent-yoga-classes-section .row .first-column img { width: 100%; } 
+
+.parent-yoga-classes-section .row .second-column h1 { margin-top: 20px; }
+
+.parent-yoga-classes-section .row .second-column span { background: var(--sixth); color: #fff; display: inline-block; border-radius: 60px; padding: 1px 10px; }
+
+.parent-yoga-classes-section .row .second-column h4 { margin-top: 20px; }
+
+.parent-yoga-classes-section .row .second-column a { margin-top: 20px; }
+
+.why-parent-yoga-section { background: #F4F4F4; padding: 90px 0; }
+
+.why-parent-yoga-section .first-row { max-width: 650px; margin: auto; }
+
+.why-parent-yoga-section .first-row h3 { margin-top: 10px; }
+
+.why-parent-yoga-section .first-row h4 { margin-top: 15px; }
+
+.why-parent-yoga-section .second-row { max-width: 75%; margin: auto; margin-top: 30px; column-gap: 18px; }
+
+.why-parent-yoga-section .second-row .column { padding: 35px; box-sizing: border-box; border-radius: 15px; width: 33.3%; }
+
+.why-parent-yoga-section .second-row .first-column { background: var(--quartery); }
+
+.why-parent-yoga-section .second-row .second-column { background: var(--terciary); }
+
+.why-parent-yoga-section .second-row .third-column { background: var(--secondary); }
+
+.why-parent-yoga-section .second-row .column img { margin: auto; }
+
+.why-parent-yoga-section .second-row .column h4 { margin-top: 10px; }
+
+.why-parent-yoga-section .second-row .column p { margin-top: 10px; }
+
+.why-parent-yoga-section a { margin: auto; margin-top: 30px; }
+
+.safe-and-supportive-environment-section { padding: 90px 0; background: var(--secondary); }
+
+.safe-and-supportive-environment-section .row { column-gap: 50px; }
+
+.safe-and-supportive-environment-section .row .column { width: 50%; }
+
+.safe-and-supportive-environment-section .row .first-column h2 { margin-top: 20px; }
+
+.safe-and-supportive-environment-section .row .first-column p { margin-top: 20px; }
+
+.safe-and-supportive-environment-section .row .first-column a { margin-top: 20px; }
+
+.safe-and-supportive-environment-section .row .first-column .column-content { max-width: 560px; float: right; padding-left: 20%; }
+
+.safe-and-supportive-environment-section .row .second-column img { width: 100%; max-width: 65%; float: right; }
+
+.your-family-routing-section { padding: 90px 0; background: #fff; }
+
+.your-family-routing-section iframe { display: block; width: 100%; height: 1320px; }
+
+.your-family-routing-section .first-row h2 { line-height: 1.3; }
+
+.your-family-routing-section .first-row h2 span { font-size: 20px; }
+
+.your-family-routing-section .second-row { margin-top: 30px; }
+
+.yoga-faqs-section { padding: 90px 0; background: #F4F4F4; }
+
+.yoga-faqs-section .row { column-gap: 100px; }
+
+.yoga-faqs-section .row .first-column { width: 25%; }
+
+.yoga-faqs-section .row .first-column h3 { margin-top: 20px; }
+
+.yoga-faqs-section .row .first-column h4 { margin-top: 20px; }
+
+.yoga-faqs-section .row .first-column a { margin-top: 20px; }
+
+.yoga-faqs-section .row .second-column { width: 75%; }
+
+.yoga-faqs-section .row .second-column .tab-content { background: #fff; border-bottom: 1px solid #C6C6C6; }
+
+.yoga-faqs-section .row .second-column .tab-content:first-child { border-top-left-radius: 10px; border-top-right-radius: 10px; }
+
+.yoga-faqs-section .row .second-column .tab-content:first-child .tab-header { border-top-left-radius: 10px; border-top-right-radius: 10px; }
+
+.yoga-faqs-section .row .second-column .tab-content:last-child { border-bottom: 0; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+
+.yoga-faqs-section .row .second-column .tab-content:last-child .tab-header { border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+
+.yoga-faqs-section .row .second-column .tab-header { transition: all 0.6s; box-sizing: border-box; padding: 25px 100px; cursor: pointer; }
+
+.yoga-faqs-section .row .second-column .tab-header h4 { text-align: left; transition: all 0.6s; }
+
+.yoga-faqs-section .row .second-column .tab-header:hover { background: var(--primary); }
+
+.yoga-faqs-section .row .second-column .tab-header:hover .fa-plus,
+.yoga-faqs-section .row .second-column .tab-header:hover .fa-angle-right,
+.yoga-faqs-section .row .second-column .tab-header:hover h4 { color: #fff; }
+
+.yoga-faqs-section .row .second-column .tab-content.active .tab-header { background: var(--primary); }
+
+.yoga-faqs-section .row .second-column .tab-content.active .fa-plus,
+.yoga-faqs-section .row .second-column .tab-content.active .fa-angle-right,
+.yoga-faqs-section .row .second-column .tab-content.active h4 { color: #fff; }
+
+.yoga-faqs-section .row .second-column .tab-content.active .fa-angle-right { transform: rotate(90deg); }
+
+.yoga-faqs-section .row .second-column .tab-content.active:last-child .tab-header { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+.yoga-faqs-section .row .second-column .tab-header .tab-header-title { column-gap: 20px; margin-right: 20px; }
+
+.yoga-faqs-section .row .second-column .tab-header .fa-plus { transition: all 0.6s; color: var(--primary); font-size: 20px; }
+
+.yoga-faqs-section .row .second-column .tab-header .fa-angle-right { transition: all 0.6s; color: #959595; font-size: 20px; }
+
+.yoga-faqs-section .row .second-column .tab-body { display: none; box-sizing: border; padding: 25px 100px; }
+
+.yoga-faqs-section .row .second-column .tab-body,
+.yoga-faqs-section .row .second-column .tab-body *,
+.yoga-faqs-section .row .second-column .tab-body h4 { font-family: 'Nunito', sans-serif; font-weight: 500; font-size: 20px; text-align: left; color: #959595 !important; }
+
+@media (max-width: 1920px) {
+    .safe-and-supportive-environment-section .row .second-column img { max-width: 85%; }
+}
+
+@media (max-width: 1500px) {
+    .safe-and-supportive-environment-section .row .second-column img { max-width: 100%; }
+
+    .why-parent-yoga-section .first-row { max-width: 530px; }
+
+    .yoga-faqs-section .row .second-column .tab-body,
+	.yoga-faqs-section .row .second-column .tab-body *,
+	.yoga-faqs-section .row .second-column .tab-body h4 { font-size: 16px; }
+}
+
+@media (max-width: 1200px) {
+    .why-parent-yoga-section .second-row { max-width: 100%; }
+}
+
+@media (max-width: 992px) {
+    .parent-yoga-classes-section .row { flex-wrap: wrap; }
+
+    .parent-yoga-classes-section .row .column { width: 100%; text-align: center; }
+
+    .parent-yoga-classes-section .row .first-column img { margin: auto; max-width: 500px; }
+
+    .parent-yoga-classes-section .row .second-column { margin-top: 50px; }
+
+    .parent-yoga-classes-section .row .second-column a { margin: auto; margin-top: 20px; }
+
+    .why-parent-yoga-section .second-row { flex-wrap: wrap; justify-content: center; row-gap: 18px; }
+
+    .why-parent-yoga-section .second-row .column { width: calc(50% - 9px); }
+
+    .safe-and-supportive-environment-section .row { flex-wrap: wrap; }
+
+    .safe-and-supportive-environment-section .row .column { width: 100%; text-align: center; }
+
+    .safe-and-supportive-environment-section .row .first-column a { margin: auto; margin-top: 20px; }
+
+    .safe-and-supportive-environment-section .row .first-column .column-content { max-width: 80%; margin: auto; float: initial; padding-left: 0; }
+
+    .safe-and-supportive-environment-section .row .second-column { margin-top: 40px; }
+
+    .safe-and-supportive-environment-section .row .second-column img { max-width: 500px; float: right; }
+
+    .yoga-faqs-section .row { flex-wrap: wrap; }
+
+    .yoga-faqs-section .row .column { width: 100%; text-align: center; }
+
+    .yoga-faqs-section .row .first-column a { margin: auto; margin-top: 20px; }
+
+    .yoga-faqs-section .row .second-column { margin-top: 50px; }
+}
+
+@media (max-width: 768px) {
+   .yoga-faqs-section .row .second-column .tab-header,
+   .yoga-faqs-section .row .second-column .tab-body { padding: 25px 35px; } 
+}
+
+@media (max-width: 750px) {
+    .your-family-routing-section iframe { height: 990px; }
+}
+
+@media (max-width: 575px) {
+    .why-parent-yoga-section .second-row .column { width: 100%; max-width: 300px; }
+}
+
+/* end yoga page styles */
+
+
+
+/* general programs page styles */
+
+.programs-for-every-age-section { padding-top: 90px; padding-bottom: 90px; }
+
+.programs-for-every-age-section .first-row .text-content { max-width: 700px; margin: auto; }
+
+.programs-for-every-age-section .first-row h2 { margin-top: 20px; }
+
+.programs-for-every-age-section .first-row h4 { margin-top: 20px; }
+
+.programs-for-every-age-section .breadcrumb-content { column-gap: 15px; }
+
+.programs-for-every-age-section .breadcrumb-content i { font-size: 14px; }
+
+.programs-for-every-age-section .breadcrumb-content h4 { margin-top: 3px; color: #DCDCDC; font-size: 14px; }
+
+.programs-for-every-age-section .first-row .text-content { margin-top: 35px; }
+
+.programs-for-every-age-section .special-wordings-content { margin-top: 25px; }
+
+.programs-for-every-age-section .special-wordings-content h1 { box-sizing: border-box; display: inline-block; padding: 10px 20px; border-radius: 60px; }
+
+.programs-for-every-age-section .special-wordings-content .first-text { position: relative; left: 10px; transform: rotate(-5deg); background: #FFC909; }
+
+.programs-for-every-age-section .special-wordings-content .second-text { background: #EC008C; }
+
+.programs-for-every-age-section .special-wordings-content .third-text { position: relative; right: 10px; transform: rotate(5deg); background: #009FE2; }
+
+.programs-for-every-age-section .text-content .exciting-gymnastics-text { max-width: 688px; margin: auto; margin-top: 30px; }
+
+.programs-for-every-age-section .second-row { margin-top: 60px; }
+
+.programs-for-every-age-section .btn { margin: auto; margin-top: 25px; }
+
+.inclusive-programs-for-every-child-section { padding: 90px 0; background: #F4F4F4; }
+
+.inclusive-programs-for-every-child-section .first-row h3 { margin-top: 10px; }
+
+.inclusive-programs-for-every-child-section .second-row { margin-top: 50px; column-gap: 18px; }
+
+.inclusive-programs-for-every-child-section .second-row .column { display: flex; flex-direction: column; width: 25%; border-radius: 15px; padding: 35px; box-sizing: border-box; }
+
+.inclusive-programs-for-every-child-section .second-row .first-column { background: var(--secondary); }
+
+.inclusive-programs-for-every-child-section .second-row .second-column { background: var(--quartery); }
+
+.inclusive-programs-for-every-child-section .second-row .third-column { background: var(--fifth); }
+
+.inclusive-programs-for-every-child-section .second-row .fourth-column { background: var(--sixth); }
+
+.inclusive-programs-for-every-child-section .second-row .column p { margin-top: 12px; margin-bottom: 20px; }
+
+.inclusive-programs-for-every-child-section .second-row .column a { text-align: center; margin-top: auto; margin-left: auto; margin-right: auto; }
+
+.inclusive-programs-for-every-child-section .second-row .column a:hover { color: #fff; }
+
+@media (max-width: 992px) {
+    .programs-for-every-age-section .second-row { flex-wrap: wrap; justify-content: center; column-gap: 12px; row-gap: 12px; }
+
+    .programs-for-every-age-section .second-row .column { width: calc(33.3% - 8px); }
+
+    .programs-for-every-age-section .special-wordings-content { flex-wrap: wrap; flex-direction: column; row-gap: 0; }
+
+    .programs-for-every-age-section .special-wordings-content h1 { text-align: center; margin: auto; min-width: 300px; left: auto !important; right: 0 !important; }
+
+    .inclusive-programs-for-every-child-section .second-row { flex-wrap: wrap; row-gap: 18px; }
+
+    .inclusive-programs-for-every-child-section .second-row .column { width: calc(50% - 9px); }
+}
+
+@media (max-width: 575px) {
+    .inclusive-programs-for-every-child-section .second-row .column { width: 100%; max-width: 300px; margin: auto; }
+}
+
+/* end general programs page styles */
+
+
+
+/* parents tot page styles */
+
+.parent-child-classes-section { background: #F4F4F4; padding: 90px 0; }
+
+.parent-child-classes-section .row { column-gap: 120px; }
+
+.parent-child-classes-section .row .column { width: 50%; }
+
+.parent-child-classes-section .row .first-column img { width: 100%; }
+
+.parent-child-classes-section .row .second-column h1 { margin-top: 20px; }
+
+.parent-child-classes-section .row .second-column h1 span { display: inline-block; padding: 1px 10px; background: var(--fifth); border-radius: 60px; }
+
+.parent-child-classes-section .row .second-column h4 { margin-top: 20px; }
+
+.parent-child-classes-section .row .second-column a { margin-top: 30px; }
+
+.classes-tailored-section { background: #F4F4F4; padding: 70px 0; }
+
+.classes-tailored-section .first-row h3 { max-width: 635px; margin: auto; }
+
+.classes-tailored-section .first-row h4 { max-width: 700px; margin: auto; margin-top: 20px; }
+
+.classes-tailored-section .second-row { max-width: 80%; margin: auto; margin-top: 50px; column-gap: 18px; }
+
+.classes-tailored-section .second-row .column { width: 50%; padding: 35px; box-sizing: border-box; border-radius: 15px; }
+
+.classes-tailored-section .second-row .first-column { background: var(--quartery); }
+
+.classes-tailored-section .second-row .second-column { background: var(--terciary); }
+
+.classes-tailored-section a { margin: auto; margin-top: 30px; }
+
+.tot-program-iframe-section { padding: 90px 0; }
+
+.tot-program-iframe-section iframe { margin-top: 30px; display: block; width: 100%; height: 510px; }
+
+.join-us-at-twist-naples-section { padding: 40px 0; background: #009FE2; }
+
+.join-us-at-twist-naples-section .row { column-gap: 110px; }
+
+.join-us-at-twist-naples-section .row .column { width: 50%; }
+
+.join-us-at-twist-naples-section .row .first-column .column-content { max-width: 520px; float: right; padding-left: 20%; }
+
+.join-us-at-twist-naples-section .row .first-column h2 { margin-top: 20px; }
+
+.join-us-at-twist-naples-section .row .first-column p { margin-top: 20px; }
+
+.join-us-at-twist-naples-section .row .first-column a { margin-top: 30px; }
+
+.join-us-at-twist-naples-section .row .second-column img { width: 100%; max-width: 65%; float: right; }
+
+@media (max-width: 1920px) {
+    .join-us-at-twist-naples-section .row .second-column img { max-width: 85%; }
+}
+
+@media (max-width: 1500px) {
+    .parent-child-classes-section .row .second-column .column-content { max-width: 440px; }
+
+    .classes-tailored-section .first-row h3 { max-width: 490px; }
+
+    .classes-tailored-section .first-row h4 { max-width: 560px; }
+
+    .join-us-at-twist-naples-section .row .second-column img { max-width: 100%; } 
+
+    .join-us-at-twist-naples-section .row .first-column h2 { max-width: 450px; }
+
+    .join-us-at-twist-naples-section .row .first-column p { max-width: 470px; }
+
+    .join-us-at-twist-naples-section .row .first-column p:first-child { max-width: 100%; width: 600px; }
+}
+
+@media (max-width: 1340px) {
+    .join-us-at-twist-naples-section .row .first-column p:first-child { width: 100%; }
+}
+
+@media (max-width: 992px) {
+    .parent-child-classes-section .row { flex-wrap: wrap; }
+
+    .parent-child-classes-section .row .column { width: 100%; text-align: center; }
+
+    .parent-child-classes-section .row .first-column img { max-width: 500px; margin: auto; }
+
+    .parent-child-classes-section .row .second-column { margin-top: 40px; }
+
+    .parent-child-classes-section .row .second-column a { margin: auto; margin-top: 30px; }
+
+    .parent-child-classes-section .row .second-column .column-content { max-width: 100%; }
+
+    .join-us-at-twist-naples-section .row { flex-wrap: wrap; }
+
+    .join-us-at-twist-naples-section .row .column { width: 100%; text-align: center; }
+
+    .join-us-at-twist-naples-section .row .first-column .column-content { padding-left: 0; max-width: 80%; float: initial; margin: auto; }
+
+    .join-us-at-twist-naples-section .row .first-column a { margin: auto; margin-top: 30px; }
+
+    .join-us-at-twist-naples-section .row .second-column { margin-top: 50px; }
+
+    .join-us-at-twist-naples-section .row .second-column img { float: initial; margin: auto; max-width: 500px; }
+
+    .join-us-at-twist-naples-section .row .first-column h2,
+    .join-us-at-twist-naples-section .row .first-column p { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .classes-tailored-section .second-row { flex-wrap: wrap; row-gap: 18px; max-width: 100%; }
+
+    .classes-tailored-section .second-row .column { width: 100%; max-width: 300px; }
+}
+
+@media (max-width: 750px) {
+    .tot-program-iframe-section iframe { height: 290px; }
+}
+
+/* end parents tot page styles */
+
+
+
+/* schedule page styles */
+
+.class-schedule-section { background: #F4F4F4; padding: 110px 0; }
+
+.class-schedule-section h1 { margin-top: 20px; }
+
+.class-schedule-section h1 span { display: inline-block; padding: 1px 10px; background: var(--quartery); border-radius: 60px; }
+
+.class-schedule-section h4 { margin: auto; margin-top: 30px; max-width: 665px; }
+
+.class-schedule-section .vector-07,
+.class-schedule-section .vector-08,
+.class-schedule-section .vector-09,
+.class-schedule-section .vector-10 { position: absolute; }
+
+.class-schedule-section .vector-08 { top: -60px; left: 150px; }
+
+.class-schedule-section .vector-09 { right: 85px; bottom: 60px; }
+
+.class-schedule-section .vector-10 { right: 0; top: 50%; transform: translateY(-50%); }
+
+.iframe-schedule-section { padding: 90px 0; }
+
+.iframe-schedule-section iframe { display: block; width: 100%; height: 1350px; }
+
+.tooltip { position: absolute; background: var(--quartery); width: 287px; border-radius: 10px; box-sizing: border-box; padding: 30px; }
+
+.tooltip span { font-weight: 800; }
+
+.tooltip::before { content: ''; position: absolute; top: -10px; right: 30px; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid var(--quartery); }
+
+@media (max-width: 1500px) {
+    .class-schedule-section h4 { max-width: 525px; }
+}
+
+@media (max-width: 1350px) {
+    .iframe-schedule-section iframe { height: 2120px; }
+}
+
+@media (max-width: 992px) {
+    .class-schedule-section .vector-07 { bottom: -145px; }
+
+    .class-schedule-section .vector-09 { bottom: 20px; }
+}
+
+@media (max-width: 750px) {
+    .iframe-schedule-section iframe { height: 1000px; }
+}
+
+/* end schedule page styles */
+
+
+
+/* pricing page styles */
+
+.pricing-and-memberships-section { background-image: url(../images/custom-background-07.png); padding: 110px 0; }
+
+.pricing-and-memberships-section h1 { margin-top: 20px; }
+
+.pricing-and-memberships-section h1 span { display: inline-block; padding: 1px 10px; background: var(--terciary); border-radius: 60px; }
+
+.pricing-and-memberships-section h4 { margin: auto; margin-top: 30px; max-width: 665px; }
+
+.pricing-and-memberships-section .vector-11,
+.pricing-and-memberships-section .vector-12,
+.pricing-and-memberships-section .vector-13 { position: absolute; }
+
+.pricing-and-memberships-section .vector-11 { bottom: 80px; left: 10px; }
+
+.pricing-and-memberships-section .vector-12 { right: 125px; bottom: 105px; }
+
+.pricing-and-memberships-section .vector-13 { right: 0; top: 50%; transform: translateY(-50%); }
+
+.pricing-blocks-section { padding: 110px 0; background: #F4F4F4; }
+
+.pricing-blocks-section .row { flex-wrap: wrap; max-width: 75%; margin: auto; column-gap: 18px; row-gap: 18px; }
+
+.pricing-blocks-section .row .column { display: flex; flex-direction: column; align-items: center; padding: 35px; box-sizing: border-box; border-radius: 15px; width: calc(33.3% - 18px); }
+
+.pricing-blocks-section .row .first-column { background: var(--secondary); }
+
+.pricing-blocks-section .row .second-column { background: var(--quartery); }
+
+.pricing-blocks-section .row .third-column { background: var(--fifth); }
+
+.pricing-blocks-section .row .fourth-column { background: var(--primary); }
+
+.pricing-blocks-section .row .column h3 { font-size: 40px; margin-top: 10px; }
+
+.pricing-blocks-section .row .column h3 span { color: #fff; font-size: 20px; }
+
+.pricing-blocks-section .row .column p { margin-top: 5px; }
+
+.pricing-blocks-section .row .column ul { margin-top: 10px; margin-bottom: 20px; padding-left: 30px; }
+
+.pricing-blocks-section .row .column ul li { color: #fff; list-style: initial; }
+
+.pricing-blocks-section .row .column a { text-align: center; max-width: 120px; margin-top: auto; }
+
+.pricing-blocks-section .row .column a:hover { color: #fff; }
+
+.pricing-blocks-section .special-price-text { column-gap: 15px; margin-top: 50px; }
+
+.pricing-blocks-section .special-price-text span { font-size: 20px; }
+
+.drop-in-any-time-section { background-image: url(../images/custom-background-08.png); padding: 90px 0; }
+
+.drop-in-any-time-section .first-row h3 { margin-top: 20px; }
+
+.drop-in-any-time-section .second-row { flex-wrap: wrap; max-width: 75%; margin: auto; margin-top: 50px; column-gap: 18px; row-gap: 18px; }
+
+.drop-in-any-time-section .second-row .column { display: flex; flex-direction: column; align-items: center; padding: 35px; border-radius: 10px; box-sizing: border-box; width: calc(33.3% - 18px); }
+
+.drop-in-any-time-section .second-row .first-column { background: var(--primary); }
+
+.drop-in-any-time-section .second-row .second-column { background: var(--secondary); }
+
+.drop-in-any-time-section .second-row .third-column { background: var(--quartery); }
+
+.drop-in-any-time-section .second-row .column h3 { font-size: 40px; margin-top: 10px; }
+
+.drop-in-any-time-section .second-row .column span { color: #fff; font-size: 20px; }
+
+.drop-in-any-time-section .second-row .column li, .drop-in-any-time-section .second-row .column p { color: #fff; }
+
+.drop-in-any-time-section .second-row .column p { margin-top: 10px; margin-bottom: 20px; }
+
+.drop-in-any-time-section .second-row .column ul { margin-top: 10px; margin-bottom: 20px; padding-left: 30px; }
+
+.drop-in-any-time-section .second-row .column ul li { list-style: initial; }
+
+.drop-in-any-time-section .second-row .column a { margin-top: auto; }
+
+.drop-in-any-time-section .second-row .column a:hover { color: #fff; }
+
+@media (max-width: 1500px) {
+    .pricing-and-memberships-section .vector-11 { max-width: 190px; }
+
+    .pricing-and-memberships-section .vector-12 { max-width: 30px; }
+
+    .pricing-and-memberships-section .vector-13 { max-width: 40px; }
+
+    .pricing-and-memberships-section h4 { max-width: 545px; }
+
+    .pricing-blocks-section .row .column h3 { font-size: 32px; }
+
+    .pricing-blocks-section .row .column h3 span { font-size: 16px; }
+
+    .pricing-blocks-section .special-price-text span { font-size: 16px; }
+
+    .drop-in-any-time-section .second-row .column h3 { font-size: 32px; }
+
+    .drop-in-any-time-section .second-row .column span { font-size: 16px; }
+}
+
+@media (max-width: 1280px) {
+    .drop-in-any-time-section .second-row { max-width: 100%; }
+}
+
+@media (max-width: 1200px) {
+    .pricing-blocks-section .row { flex-wrap: wrap; row-gap: 18px; }
+
+    .pricing-blocks-section .row .column { width: calc(50% - 9px); }
+}
+
+@media (max-width: 992px) {
+    .pricing-and-memberships-section .vector-11 { bottom: auto; top: 25px; max-width: 170px; }
+
+    .pricing-and-memberships-section .vector-12 { bottom: 40px; }
+
+    .drop-in-any-time-section .second-row { flex-wrap: wrap; row-gap: 18px; }
+
+    .drop-in-any-time-section .second-row .column { width: calc(50% - 9px); }
+}
+
+@media (max-width: 768px) {
+    .pricing-and-memberships-section .vector-11 { max-width: 140px; }
+
+    .pricing-blocks-section .row .column { width: 100%; max-width: 300px; margin: auto; }
+
+    .pricing-blocks-section .row .column .internal-text { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; column-gap: 15px; }
+
+    .pricing-blocks-section .row .column p { margin-top: 0; }
+}
+
+@media (max-width: 575px) {
+    .drop-in-any-time-section .second-row .column { width: 100%; max-width: 300px; margin: auto; }
+}
+
+/* end pricing page styles */
+
+
+
+/* parties page styles */
+
+.unforgettable-kids-section { padding: 70px 0; }
+
+.unforgettable-kids-section h1 { margin-top: 20px; }
+
+.unforgettable-kids-section h1 span { display: inline-block; padding: 1px 10px; background: var(--secondary); border-radius: 60px; }
+
+.unforgettable-kids-section h1 img { display: inline-block; position: relative; top: 8px; }
+
+.unforgettable-kids-section h4 { margin-top: 20px; }
+
+.unforgettable-kids-section .row { column-gap: 50px; }
+
+.unforgettable-kids-section .row .column { width: 50%; }
+
+.unforgettable-kids-section .row .second-column img { width: 100%; }
+
+.twist-parties-section { padding-top: 20px; background: var(--fifth); }
+
+.twist-parties-section .row { column-gap: 120px; }
+
+.twist-parties-section .row .column { width: 50%; }
+
+.twist-parties-section .row .first-column img { width: 100%; max-width: 65%; }
+
+.twist-parties-section .row .second-column .column-content { max-width: 550px; padding-right: 20%; margin: 7.5% 0; }
+
+.twist-parties-section .row .second-column h2,
+.twist-parties-section .row .second-column h4 { margin-top: 20px; }
+
+.twist-parties-section .second-column .inner-row { margin-top: 40px; flex-wrap: wrap; column-gap: 20px; row-gap: 20px; }
+
+.twist-parties-section .second-column .inner-row .inner-column { column-gap: 10px; width: calc(33.3% - 20px); }
+
+.twist-parties-section .second-column .inner-row .inner-column p { line-height: 1; }
+
+.party-options-section { padding: 90px 0; background: #F4F4F4; }
+
+.party-options-section .first-row h2 { margin-top: 15px; }
+
+.party-options-section .second-row { margin-top: 50px; column-gap: 18px; }
+
+.party-options-section .second-row .column { width: 50%; }
+
+.party-options-section .second-row .column-content { border-radius: 15px; position: relative; padding: 50px 80px; box-sizing: border-box; background: #fff; box-shadow: 0 2px 20px rgb(0 0 0 / 15%); height: calc(100% - 430px); }
+
+.party-options-section .second-row .column .option-block { position: absolute; top: -25px; left: 50%; transform: translateX(-50%); border-radius: 60px; padding: 10px 30px; min-width: 320px; box-sizing: border-box; }
+
+.party-options-section .second-row .first-column .option-block { background: var(--secondary); }
+
+.party-options-section .second-row .second-column .option-block { background: var(--quartery); }
+
+.party-options-section .second-row .column .you-supply-text { margin-top: 10px; }
+
+.party-options-section .second-row .column ul { margin-top: 15px; }
+
+.party-options-section .second-row .column ul li { text-align: center; list-style: initial; margin: auto; }
+
+.party-options-section .second-row .first-column ul { display: flex; flex-direction: column; }
+
+.party-options-section .second-row .second-column .inner-row { column-gap: 50px; }
+
+.party-options-section .second-row .second-column ul { padding-left: 20px; }
+
+.party-options-section .second-row .second-column ul li { text-align: left; }
+
+.party-options-section .second-row .pricing-content { max-width: 330px; margin: auto; margin-top: 40px; }
+
+.party-options-section .second-row .pricing-content .price-block { column-gap: 20px; margin-top: 30px; }
+
+.party-options-section .second-row .pricing-content .price-block h2,
+.party-options-section .second-row .pricing-content .price-block h3 { min-width: 100px; }
+
+.party-options-section .second-row .extra-note-text { max-width: 80%; margin: auto; font-size: 14px; font-style: italic; margin-top: 30px; }
+
+@media (max-width: 1920px) {
+    .twist-parties-section .row .first-column img { max-width: 85%; }
+}
+
+@media (max-width: 1500px) {
+    .twist-parties-section .row .first-column img { max-width: 100%; }
+}
+
+@media (max-width: 1200px) {
+    .twist-parties-section { padding-top: 70px; }
+
+    .twist-parties-section .row { flex-wrap: wrap; flex-direction: column-reverse; }
+
+    .twist-parties-section .row .column { width: 100%; text-align: center; }
+
+    .twist-parties-section .row .first-column { margin-top: 50px; }
+
+    .twist-parties-section .row .first-column img { max-width: 500px; margin: auto; }
+
+    .twist-parties-section .row .second-column .column-content { margin: auto; max-width: 80%; padding-right: 0; }
+
+    .twist-parties-section .row .second-column .inner-column p { text-align: left; }
+}
+
+@media (max-width: 992px) {
+    .unforgettable-kids-section .row { flex-wrap: wrap; }
+
+    .unforgettable-kids-section .row .column { width: 100%; text-align: center; }
+
+    .unforgettable-kids-section .row .second-column { margin-top: 50px; }
+
+    .unforgettable-kids-section .row .second-column img { max-width: 500px; margin: auto; }
+
+    .party-options-section .second-row { flex-wrap: wrap; }
+
+    .party-options-section .second-row .column { width: 100%; }
+
+    .party-options-section .second-row .second-column { margin-top: 80px; }
+
+    .party-options-section .second-row .column-content { height: auto; }
+}
+
+@media (max-width: 768px) {
+    .twist-parties-section .second-column .inner-row { flex-wrap: wrap; }
+
+    .twist-parties-section .second-column .inner-row .inner-column { width: calc(50% - 20px); }
+}
+
+@media (max-width: 575px) {
+    .party-options-section .second-row .second-column .inner-row { flex-wrap: wrap; }
+
+    .party-options-section .second-row .second-column .inner-row .inner-column { width: 100%; }
+
+    .party-options-section .second-row .second-column .inner-row .second-inner-column { margin-top: 20px; }
+
+    .party-options-section .second-row .column-content { padding: 50px; }
+}
+
+@media (max-width: 480px) {
+    .twist-parties-section .second-column .inner-row .inner-column { width: 100%; }
+}
+
+/* end parties page styles */
+
+
+
+/* gymnastic programs page styles */
+
+.kids-gymnastics-section { padding: 70px 0; }
+
+.kids-gymnastics-section .row { column-gap: 100px; }
+
+.kids-gymnastics-section .column { width: 100%; }
+
+.kids-gymnastics-section .first-column img { width: 100%; }
+
+.kids-gymnastics-section .second-column h1 { margin-top: 20px; }
+
+.kids-gymnastics-section .second-column h1 span { display: inline-block; padding: 1px 10px; background: var(--secondary); border-radius: 60px; }
+
+.kids-gymnastics-section .second-column h4 { margin-top: 20px; }
+
+.kids-gymnastics-section .second-column a { margin-top: 30px; }
+
+.gymnastics-program-for-all-levels-section { padding: 120px 0; background: #F4F4F4; }
+
+.gymnastics-program-for-all-levels-section .first-row { max-width: 700px; margin: auto; }
+
+.gymnastics-program-for-all-levels-section .first-row h3 { margin-top: 20px; }
+
+.gymnastics-program-for-all-levels-section .first-row h4 { margin-top: 20px; }
+
+.gymnastics-program-for-all-levels-section .second-row { margin-top: 50px; column-gap: 18px; row-gap: 18px; }
+
+.gymnastics-program-for-all-levels-section .second-row .column { padding: 35px; box-sizing: border-box; border-radius: 15px; }
+
+.gymnastics-program-for-all-levels-section .second-row .first-column { width: 50%; background: var(--secondary); }
+
+.gymnastics-program-for-all-levels-section .second-row .second-column { width: 25%; background: var(--fifth); }
+
+.gymnastics-program-for-all-levels-section .second-row .third-column { width: 25%; background: var(--primary); }
+
+.gymnastics-program-for-all-levels-section .second-row .column p { margin-top: 10px; }
+
+.gymnastics-program-for-all-levels-section a { margin: auto; margin-top: 40px; }
+
+.gymnastics-program-iframe-section { padding: 90px 0; }
+
+.gymnastics-program-iframe-section iframe { margin-top: 30px; display: block; width: 100%; height: 1200px; }
+
+.more-than-just-a-sport-section { background: #F4F4F4; padding: 110px 0; }
+
+.more-than-just-a-sport-section .first-row { max-width: 680px; margin: auto; }
+
+.more-than-just-a-sport-section .first-row h3 { margin-top: 30px; }
+
+.more-than-just-a-sport-section .first-row h4 { margin-top: 20px; }
+
+.more-than-just-a-sport-section .second-row { margin-top: 50px; column-gap: 18px; row-gap: 18px; }
+
+.more-than-just-a-sport-section .second-row .column { width: 25%; padding: 35px; box-sizing: border-box; border-radius: 15px; }
+
+.more-than-just-a-sport-section .second-row .column img { margin: auto; }
+
+.more-than-just-a-sport-section .second-row .column h4 { margin-top: 10px; }
+
+.more-than-just-a-sport-section .second-row .column p { margin-top: 10px; }
+
+.more-than-just-a-sport-section .second-row .first-column { background: var(--quartery); }
+
+.more-than-just-a-sport-section .second-row .second-column { background: var(--terciary); }
+
+.more-than-just-a-sport-section .second-row .third-column { background: var(--secondary); }
+
+.more-than-just-a-sport-section .second-row .fourth-column { background: var(--fifth); }
+
+.more-than-just-a-sport-section a { margin: auto; margin-top: 40px; }
+
+@media (max-width: 1500px) {
+    .more-than-just-a-sport-section .first-row { max-width: 550px; }
+
+    .gymnastics-program-for-all-levels-section .first-row { max-width: 550px; }
+}
+
+@media (max-width: 992px) {
+    .kids-gymnastics-section .row { flex-wrap: wrap; }
+
+    .kids-gymnastics-section .row .column { width: 100%; text-align: center; }
+
+    .kids-gymnastics-section .row .first-column img { max-width: 500px; margin: auto; }
+
+    .kids-gymnastics-section .row .second-column { margin-top: 50px; }
+
+    .kids-gymnastics-section .row .second-column a { margin: auto; margin-top: 30px; }
+
+    .gymnastics-program-for-all-levels-section .second-row { flex-wrap: wrap; }
+
+    .gymnastics-program-for-all-levels-section .second-row .column { width: calc(50% - 9px); }
+
+    .more-than-just-a-sport-section .second-row { flex-wrap: wrap; }
+
+    .more-than-just-a-sport-section .second-row .column { width: calc(50% - 9px); }
+}
+
+@media (max-width: 750px) {
+    .gymnastics-program-iframe-section iframe { height: 395px; }
+}
+
+@media (max-width: 575px) {
+    .gymnastics-program-for-all-levels-section .second-row .column { width: 100%; max-width: 300px; }
+
+    .more-than-just-a-sport-section .second-row .column { width: 100%; max-width: 300px; }
+}
+
+/* end gymnastic programs page styles */
+
+
+
+/* ninja warrior programs page styles */
+
+.ninja-warrior-classes-section { background: #F4F4F4; padding: 70px 0; }
+
+.ninja-warrior-classes-section .row { column-gap: 120px; }
+
+.ninja-warrior-classes-section .row .column { width: 50%; }
+
+.ninja-warrior-classes-section .row .first-column img { width: 100%; }
+
+.ninja-warrior-classes-section .row .second-column h1 { margin-top: 20px; }
+
+.ninja-warrior-classes-section .row .second-column h1 span { display: inline-block; padding: 1px 10px; background: var(--quartery); border-radius: 60px; }
+
+.ninja-warrior-classes-section .row .second-column h4 { margin-top: 20px; }
+
+.ninja-warrior-classes-section .row .second-column a { margin-top: 20px; }
+
+.ninja-warrior-program-iframe-section { padding: 90px 0; }
+
+.ninja-warrior-program-iframe-section iframe { margin-top: 30px; display: block; width: 100%; height: 620px; }
+
+.strength-skill-confidence-await-section { padding-top: 70px; background: var(--quartery); }
+
+.strength-skill-confidence-await-section .row { column-gap: 80px; }
+
+.strength-skill-confidence-await-section .row .column { width: 50%; }
+
+.strength-skill-confidence-await-section .row .first-column .column-content { max-width: 560px; margin-bottom: 10%; padding-left: 20%; float: right; }
+
+.strength-skill-confidence-await-section .row .first-column h2 { margin-top: 20px; }
+
+.strength-skill-confidence-await-section .row .first-column .description-text { margin-top: 20px; }
+
+.strength-skill-confidence-await-section .row .first-column a { margin-top: 20px; }
+
+.strength-skill-confidence-await-section .row .second-column img { width: 100%; max-width: 65%; float: right; }
+
+.find-the-perfect-ninja-class-section { padding: 120px 0; }
+
+.find-the-perfect-ninja-class-section .first-row { max-width: 700px; margin: auto; }
+
+.find-the-perfect-ninja-class-section .first-row h4 { margin-top: 20px; }
+
+.find-the-perfect-ninja-class-section .second-row { margin-top: 50px; column-gap: 18px; row-gap: 18px; }
+
+.find-the-perfect-ninja-class-section .second-row .column { width: 25%; padding: 35px; box-sizing: border-box; border-radius: 15px; }
+
+.find-the-perfect-ninja-class-section .second-row .column p { margin-top: 10px; }
+
+.find-the-perfect-ninja-class-section .second-row .first-column { background: var(--secondary); }
+
+.find-the-perfect-ninja-class-section .second-row .second-column { background: var(--quartery); }
+
+.find-the-perfect-ninja-class-section .second-row .third-column { background: var(--fifth); }
+
+.find-the-perfect-ninja-class-section .second-row .fourth-column { background: var(--primary); }
+
+.find-the-perfect-ninja-class-section a { margin: auto; margin-top: 40px; }
+
+@media (max-width: 1920px) {
+    .strength-skill-confidence-await-section .row .second-column img { max-width: 85%; }
+}
+
+@media (max-width: 1500px) {
+    .find-the-perfect-ninja-class-section .first-row { max-width: 550px; }
+
+    .strength-skill-confidence-await-section .row .second-column img { max-width: 100%; }
+}
+
+@media (max-width: 992px) {
+    .ninja-warrior-classes-section .row { flex-wrap: wrap; }
+
+    .ninja-warrior-classes-section .row .column { width: 100%; text-align: center; }
+
+    .ninja-warrior-classes-section .row .first-column img { max-width: 500px; margin: auto; }
+
+    .ninja-warrior-classes-section .row .second-column { margin-top: 50px; }
+
+    .ninja-warrior-classes-section .row .second-column a { margin: auto; margin-top: 20px; }
+
+    .strength-skill-confidence-await-section .row { flex-wrap: wrap; }
+
+    .strength-skill-confidence-await-section .row .column { width: 100%; text-align: center; }
+
+    .strength-skill-confidence-await-section .row .first-column .column-content { padding-left: 0; max-width: 80%; float: initial; margin: auto; }
+
+    .strength-skill-confidence-await-section .row .first-column a { margin: auto; margin-top: 20px; }
+
+    .strength-skill-confidence-await-section .row .second-column { margin-top: 50px; }
+
+    .strength-skill-confidence-await-section .row .second-column img { max-width: 500px; float: initial; margin: auto; }
+
+    .find-the-perfect-ninja-class-section .second-row { flex-wrap: wrap; }
+
+    .find-the-perfect-ninja-class-section .second-row .column { width: calc(50% - 9px); }
+}
+
+@media (max-width: 750px) {
+    .ninja-warrior-program-iframe-section iframe { height: 295px; }
+}
+
+@media (max-width: 575px) {
+    .find-the-perfect-ninja-class-section .second-row .column { width: 100%; max-width: 300px; }
+}
+
+/* end ninja warrior programs page styles */
+
+
+
+/* meet our team page styles */
+
+.meet-our-dedicated-team-section { padding: 90px 0; background-image: url(../images/custom-background-09.png); }
+
+.meet-our-dedicated-team-section .row { max-width: 560px; margin: auto; }
+
+.meet-our-dedicated-team-section h1 { margin-top: 20px; }
+
+.meet-our-dedicated-team-section h1 span { display: inline-block; padding: 1px 10px; background: var(--quartery); border-radius: 60px; }
+
+.our-team-section { padding: 70px 0; background: #F4F4F4; }
+
+.our-team-section .row { display: flex; flex-direction: column; row-gap: 30px; }
+
+.our-team-section .row .column { padding: 35px 70px; box-sizing: border-box; border-radius: 15px; }
+
+.our-team-section .row .first-column { background: var(--terciary); }
+
+.our-team-section .row .second-column { background: var(--quartery); }
+
+.our-team-section .row .third-column { background: var(--secondary); }
+
+.our-team-section .row .fourth-column { background: var(--fifth); }
+
+.our-team-section .row .column .inner-row { column-gap: 60px; }
+
+.our-team-section .row .column .inner-row .first-inner-column { width: 35%; }
+
+.our-team-section .row .column .inner-row .first-inner-column img { width: 100%; max-width: 280px; }
+
+.our-team-section .row .column .inner-row .second-inner-column { width: 65%; }
+
+.our-team-section .row .column .second-inner-column h3 { font-size: 35px; }
+
+.our-team-section .row .column .second-inner-column h4 { font-size: 20px; }
+
+.our-team-section .row .column .second-inner-column .tab-content { cursor: pointer; margin-top: 15px; border-bottom: 1px solid #fff; padding-bottom: 15px; }
+
+.our-team-section .row .tab-content i { color: #fff; }
+
+.our-team-section .row .column .second-inner-row { display: none; margin-top: 30px; }
+
+@media (max-width: 1500px) {
+    .meet-our-dedicated-team-section .row { max-width: 440px; }
+}
+
+@media (max-width: 992px) {
+    .our-team-section .row .column .inner-row { flex-wrap: wrap; }
+
+    .our-team-section .row .column .inner-row .inner-column { width: 100%; text-align: center; }
+
+    .our-team-section .row .column .inner-row .first-inner-column img { max-width: 250px; margin: auto; }
+
+    .our-team-section .row .column .inner-row .second-inner-column { margin-top: 30px; }
+
+    .our-team-section .row .column .second-inner-column .tab-content { margin-top: 25px; }
+}
+
+@media (max-width: 575px) {
+    .our-team-section .row .column { padding: 35px; }
+}
+
+/* end meet our team page styles */
+
+
+
+/* open gym page styles */
+
+.open-gym-iframe-schedule-section iframe { height: 490px; }
+
+@media (max-width: 750px) {
+	.open-gym-iframe-schedule-section iframe { height: 325px; }
+}
+
+/* end open gym page styles */
+
+
+/* NEW ELEMENTS CAMP FOR KIDS */
+
+.bg-coming-soon{background-image: url(../images/d4asd5a13das123.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+
+.bg-coming-soon h4{max-width: 500px; margin: auto;}
